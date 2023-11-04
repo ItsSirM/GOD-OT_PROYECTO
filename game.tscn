@@ -1,0 +1,63 @@
+[gd_scene load_steps=10 format=3 uid="uid://1ibrkb0s21bm"]
+
+[ext_resource type="Texture2D" uid="uid://dtimj0qenksre" path="res://SPRITES/NEGRO.png" id="1_4p0ks"]
+[ext_resource type="PackedScene" uid="uid://cpdaaualfeimx" path="res://player.tscn" id="1_rmvcv"]
+[ext_resource type="Texture2D" uid="uid://b15se6yanwjsl" path="res://BACKGROUND/Asset 1.png" id="2_65imq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q288f"]
+texture = ExtResource("2_65imq")
+texture_region_size = Vector2i(130, 130)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xon66"]
+sources/1 = SubResource("TileSetAtlasSource_q288f")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dh7wv"]
+size = Vector2(130, 1399)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_25jp0"]
+size = Vector2(627.5, 124)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uj472"]
+size = Vector2(1789, 121)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3x5r3"]
+size = Vector2(514, 129.5)
+
+[node name="GAME" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -1023.0
+offset_top = -596.0
+offset_right = 1026.0
+offset_bottom = 759.0
+texture = ExtResource("1_4p0ks")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_xon66")
+format = 2
+layer_0/tile_data = PackedInt32Array(2883524, 1, 0, 2359236, 1, 0, 1834948, 1, 0, 1310660, 1, 0, 786372, 1, 0, 262084, 1, 0, -262204, 1, 0, -786492, 1, 0, -1310780, 1, 0, -1835068, 1, 0, -2359356, 1, 0, 2883532, 1, 0, 2883540, 1, 0, 2883548, 1, 0, 2883556, 1, 0, 2883564, 1, 0, 2883572, 1, 0, 2883580, 1, 0, 2818052, 1, 0, 2818060, 1, 0, 2818068, 1, 0, 2818076, 1, 0, 2818084, 1, 0, 2818092, 1, 0, 2818100, 1, 0, 2818108, 1, 0, 2293820, 1, 0, 1769532, 1, 0, 1245244, 1, 0, 720956, 1, 0, 196668, 1, 0, -327620, 1, 0, -851908, 1, 0, -1376196, 1, 0, -1900484, 1, 0, -2424772, 1, 0, -2359348, 1, 0, -2359340, 1, 0, -2359332, 1, 0, -2359324, 1, 0, -2424780, 1, 0, -2424788, 1, 0, -2424796, 1, 0, -2424804, 1, 0, -2359316, 1, 0)
+
+[node name="PLAYER" parent="." instance=ExtResource("1_rmvcv")]
+
+[node name="PAREDES" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PAREDES"]
+position = Vector2(-951, 54.5)
+shape = SubResource("RectangleShape2D_dh7wv")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="PAREDES"]
+position = Vector2(967, 51)
+shape = SubResource("RectangleShape2D_dh7wv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="PAREDES"]
+position = Vector2(-569.75, -584)
+shape = SubResource("RectangleShape2D_25jp0")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="PAREDES"]
+position = Vector2(11.5, 687.5)
+shape = SubResource("RectangleShape2D_uj472")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="PAREDES"]
+position = Vector2(649, -586.75)
+shape = SubResource("RectangleShape2D_3x5r3")
