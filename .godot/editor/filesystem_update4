@@ -1,7 +1,6 @@
-res://game.tscn
-res://player.tscn
-res://enemigo_1.tscn
-res://personajes.tscn
-res://BALA1.gd
+res://infected.gd
+res://HUD.tscn
 res://PLAYER.gd
-res://BALA.tscn
+res://game.tscn
+res://infected.tscn
+res://player.tscn

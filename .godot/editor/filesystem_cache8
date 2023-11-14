@@ -1,26 +1,32 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699058844
-BALA.gd::GDScript::-1::1698803565::0::1::::<>Area2D<>::
-BALA.tscn::PackedScene::4821636177365555330::1698804116::0::1::::<><>::uid://tbx8a43svsm::::res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png<>res://BALA.gd
-ENEMIGO1.gd::GDScript::-1::1698397089::0::1::::<>CharacterBody2D<>::
-ENEMIGO2.gd::GDScript::-1::1698401902::0::1::::<>RigidBody2D<>::
-enemigo_1.tscn::PackedScene::6833073666459342875::1698804116::0::1::::<><>::res://ENEMIGO1.gd<>uid://bpu2kf17runy5::::res://SPRITES/Ninja_Style_2_P1.png<>uid://cpdaaualfeimx::::res://player.tscn
-ENEMIGO_2.gd::GDScript::-1::1698401098::0::1::::<>RigidBody2D<>::
-enemy.tscn::PackedScene::7788811798671550706::1698368904::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon
-game.tscn::PackedScene::1841516560049806702::1698804116::0::1::::<><>::uid://dtimj0qenksre::::res://SPRITES/NEGRO.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png
-personajes.tscn::PackedScene::4746558821491312737::1698804116::0::1::::<><>::res://PLAYER1.gd<>uid://b7arnkbq7s50l::::res://SPRITES/Ninja_Style_2_P3.png<>res://ENEMIGO2.gd<>uid://cdwv1wdhw5k5a::::res://SPRITES/Ninja_Style_3_PN.png
-PLAYER1.gd::GDScript::-1::1698397745::0::1::::<>CharacterBody2D<>::
-PLAYER.gd::GDScript::-1::1698804019::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::5831868206192508319::1698804116::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon::::res://SPRITES/Ninja_PN.png
-::res://BACKGROUND/::1698717297
-Asset 1.png::CompressedTexture2D::4274363665266560787::1698717297::1698717297::1::::<><>::
-walls_sheet.png::CompressedTexture2D::2154590380756364509::1698716768::1698716773::1::::<><>::
-::res://SCRIPT/::1698802567
-GLOBAL.gd::GDScript::-1::1698802567::0::1::::<>Node<>::
-::res://SPRITES/::1698714943
-All_Fire_Bullet_Pixel_16x16_00.png::CompressedTexture2D::39326702206046644::1698357150::1698357150::1::::<><>::
-NEGRO.png::CompressedTexture2D::8510111116292891054::1698714943::1698714943::1::::<><>::
-Ninja_PN.png::CompressedTexture2D::1054171508977564665::1698356483::1698356492::1::::<><>::
-Ninja_Style_2_P1.png::CompressedTexture2D::3482198414347644594::1698395926::1698395930::1::::<><>::
-Ninja_Style_2_P3.png::CompressedTexture2D::4633519611856709285::1698397359::1698397360::1::::<><>::
-Ninja_Style_3_PN.png::CompressedTexture2D::5030146856875992852::1698397373::1698397373::1::::<><>::
+::res://::1699244111
+BALA.gd::GDScript::-1::1699072287::0::1::::<>Area2D<>::
+BALA.tscn::PackedScene::4821636177365555330::1699073477::0::1::::<><>::uid://tbx8a43svsm
+ENEMIGO1.gd::GDScript::-1::1699072287::0::1::::<>CharacterBody2D<>::
+ENEMIGO2.gd::GDScript::-1::1699072287::0::1::::<>RigidBody2D<>::
+enemigo_1.tscn::PackedScene::6833073666459342875::1699073477::0::1::::<><>::res://ENEMIGO1.gd<>uid://bpu2kf17runy5
+ENEMIGO_2.gd::GDScript::-1::1699072287::0::1::::<>RigidBody2D<>::
+enemy.tscn::PackedScene::7788811798671550706::1699072287::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon
+game.tscn::PackedScene::1841516560049806702::1699243937::0::1::::<><>::uid://dtimj0qenksre::::res://SPRITES/NEGRO.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://dnicmc5msc2hs::::res://HUD.tscn
+HUD.tscn::PackedScene::8088375055878816028::1699243937::0::1::::<><>::
+infected.gd::GDScript::-1::1699243937::0::1::::<>CharacterBody2D<>::
+infected.tscn::PackedScene::6253044376880502836::1699243937::0::1::::<><>::res://infected.gd<>uid://dchmjvayoapcs::::res://SPRITES/zombie.png
+personajes.tscn::PackedScene::4746558821491312737::1699073477::0::1::::<><>::res://PLAYER1.gd<>uid://b7arnkbq7s50l
+PLAYER1.gd::GDScript::-1::1699072287::0::1::::<>CharacterBody2D<>::
+PLAYER.gd::GDScript::-1::1699243630::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::5831868206192508319::1699243937::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon::::res://SPRITES/Ninja_PN.png
+::res://BACKGROUND/::1699072287
+Asset 1.png::CompressedTexture2D::4274363665266560787::1699072287::1699072287::1::::<><>::
+walls_sheet.png::CompressedTexture2D::2154590380756364509::1699072287::1699072287::1::::<><>::
+::res://SCRIPT/::1699072287
+GLOBAL.gd::GDScript::-1::1699072287::0::1::::<>Node<>::
+::res://SPRITES/::1699136971
+All_Fire_Bullet_Pixel_16x16_00.png::CompressedTexture2D::39326702206046644::1699072287::1699072287::1::::<><>::
+imp.png::CompressedTexture2D::637059745227654431::1699136826::1699136971::1::::<><>::
+NEGRO.png::CompressedTexture2D::8510111116292891054::1699072287::1699072287::1::::<><>::
+Ninja_PN.png::CompressedTexture2D::1054171508977564665::1699072287::1699072287::1::::<><>::
+Ninja_Style_2_P1.png::CompressedTexture2D::3482198414347644594::1699072287::1699072287::1::::<><>::
+Ninja_Style_2_P3.png::CompressedTexture2D::4633519611856709285::1699072287::1699072287::1::::<><>::
+Ninja_Style_3_PN.png::CompressedTexture2D::5030146856875992852::1699072287::1699072287::1::::<><>::
+zombie2.png::CompressedTexture2D::5608889378967480731::1699136778::1699136971::1::::<><>::
+zombie.png::CompressedTexture2D::7314836162791657330::1699136736::1699136971::1::::<><>::

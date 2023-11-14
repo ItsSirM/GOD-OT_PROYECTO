@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnicmc5msc2hs"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hxkei"]
+bg_color = Color(0.972549, 0.227451, 0.352941, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -40.0
+offset_right = 51.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 8
+theme_override_styles/panel = SubResource("StyleBoxFlat_hxkei")
+
+[node name="HealthText" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 97.0
+offset_bottom = 36.0
+horizontal_alignment = 1
+vertical_alignment = 1

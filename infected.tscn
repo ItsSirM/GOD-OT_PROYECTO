@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvdayy1bgyhvo"]
+
+[ext_resource type="Script" path="res://infected.gd" id="1_swvcm"]
+[ext_resource type="Texture2D" uid="uid://dchmjvayoapcs" path="res://SPRITES/zombie.png" id="1_xi8im"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7r8o3"]
+size = Vector2(58, 108)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5yswv"]
+radius = 607.067
+
+[node name="Infected" type="CharacterBody2D"]
+script = ExtResource("1_swvcm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_xi8im")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-14, 29)
+shape = SubResource("RectangleShape2D_7r8o3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_5yswv")
+debug_color = Color(0.482353, 0.517647, 0, 0.419608)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -269,3 +269,4 @@ position = Vector2(349, 214)
 shape = SubResource("RectangleShape2D_38i3v")
 
 [node name="PLAYER" parent="." instance=ExtResource("3_30dqp")]
+up_direction = Vector2(-0.382852, -0.92381)

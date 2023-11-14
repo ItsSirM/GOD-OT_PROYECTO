@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
 var speed = 1200
+var health = 100
 
 # Añade una referencia a tu nodo de bala aquí
 @onready var bullet = preload("res://BALA.tscn")
@@ -12,6 +13,7 @@ var time_since_last_shot = 0.0
 
 func _ready():
 	anim.play("QUIETO_ABAJO")
+	get_parent().get_node("HUD/Panel/HealthText").text = str(health)
 
 func _physics_process(delta):
 	var dir = Input.get_vector("IZQUIERDA","DERECHA","ARRIBA","ABAJO")
