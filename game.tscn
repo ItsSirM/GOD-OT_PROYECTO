@@ -45,6 +45,7 @@ layer_0/tile_data = PackedInt32Array(2883524, 1, 0, 2359236, 1, 0, 1834948, 1, 0
 
 [node name="PLAYER" parent="." instance=ExtResource("1_rmvcv")]
 position = Vector2(-2, 305)
+up_direction = Vector2(-0.382852, -0.92381)
 
 [node name="PAREDES" type="StaticBody2D" parent="."]
 

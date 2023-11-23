@@ -1,12 +1,7 @@
-res://ENEMIES/Hellhound.gd
-res://ENEMIES/Hellhound.tscn
 res://game.tscn
+res://NODES/Hurtbox.gd
 res://player.tscn
 res://NODES/Bala2.tscn
 res://infected.tscn
-res://NODES/Hitbox.gd
-res://NODES/Hurtbox.gd
-res://ENEMIES/Rogue.tscn
-res://NODES/hitbox.tscn
-res://ENEMIES/Ghost.gd
+res://ENEMIES/Hellhound.tscn
 res://ENEMIES/Ghost.tscn
