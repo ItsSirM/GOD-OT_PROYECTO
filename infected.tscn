@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cvdayy1bgyhvo"]
+[gd_scene load_steps=9 format=3 uid="uid://cvdayy1bgyhvo"]
 
-[ext_resource type="Script" path="res://infected.gd" id="1_swvcm"]
+[ext_resource type="Script" path="res://infected.gd" id="1_3ui84"]
 [ext_resource type="Texture2D" uid="uid://dchmjvayoapcs" path="res://SPRITES/zombie.png" id="1_xi8im"]
+[ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_hojos"]
+[ext_resource type="Script" path="res://NODES/Hitbox.gd" id="4_fcjsq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7r8o3"]
 size = Vector2(58, 108)
@@ -9,8 +11,16 @@ size = Vector2(58, 108)
 [sub_resource type="CircleShape2D" id="CircleShape2D_5yswv"]
 radius = 607.067
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sx58a"]
+radius = 42.0
+height = 176.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6cjsu"]
+radius = 35.0
+height = 176.0
+
 [node name="Infected" type="CharacterBody2D"]
-script = ExtResource("1_swvcm")
+script = ExtResource("1_3ui84")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -20,12 +30,32 @@ texture = ExtResource("1_xi8im")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-14, 29)
 shape = SubResource("RectangleShape2D_7r8o3")
+debug_color = Color(0, 0.6, 0.701961, 0)
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_5yswv")
-debug_color = Color(0.482353, 0.517647, 0, 0.419608)
+debug_color = Color(0.482353, 0.517647, 0, 0.0980392)
+
+[node name="HurtBox" type="Area2D" parent="."]
+monitorable = false
+script = ExtResource("3_hojos")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(-16, -2)
+shape = SubResource("CapsuleShape2D_sx58a")
+debug_color = Color(0.898039, 0, 0.0666667, 0.156863)
+
+[node name="Hitbox" type="Area2D" parent="."]
+script = ExtResource("4_fcjsq")
+
+[node name="Timer" type="Timer" parent="Hitbox"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-15, 2)
+shape = SubResource("CapsuleShape2D_6cjsu")
+debug_color = Color(0, 0.647059, 0.211765, 0.419608)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

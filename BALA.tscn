@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://caxvv404a0eva"]
+[gd_scene load_steps=6 format=3 uid="uid://caxvv404a0eva"]
 
 [ext_resource type="Texture2D" uid="uid://tbx8a43svsm" path="res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png" id="1_nn4hc"]
 [ext_resource type="Script" path="res://BALA.gd" id="1_yq2sa"]
@@ -7,40 +7,19 @@
 atlas = ExtResource("1_nn4hc")
 region = Rect2(176, 240, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ukcc4"]
-atlas = ExtResource("1_nn4hc")
-region = Rect2(192, 240, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x4nv8"]
-atlas = ExtResource("1_nn4hc")
-region = Rect2(208, 240, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jea6t"]
-atlas = ExtResource("1_nn4hc")
-region = Rect2(224, 240, 16, 16)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_ko62k"]
 animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ajpyj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ukcc4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x4nv8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jea6t")
 }],
 "loop": true,
 "name": &"BALA",
 "speed": 20.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h1ujw"]
-size = Vector2(31, 33.0938)
+[sub_resource type="CircleShape2D" id="CircleShape2D_xonwh"]
+radius = 17.0
 
 [node name="Area2D" type="Area2D"]
 texture_filter = 1
@@ -51,12 +30,12 @@ position = Vector2(0, -1)
 scale = Vector2(5.93359, 5.85157)
 sprite_frames = SubResource("SpriteFrames_ko62k")
 animation = &"BALA"
-frame_progress = 0.851435
+frame_progress = 0.156867
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2.5, 0.453125)
-shape = SubResource("RectangleShape2D_h1ujw")
+position = Vector2(3, 2)
+shape = SubResource("CircleShape2D_xonwh")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(2, 1.19209e-07)
+position = Vector2(3, 2)
 scale = Vector2(1.67812, 1.63125)

@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://bq0i0dy6w7jot"]
+
+[ext_resource type="Script" path="res://ENEMIES/Hellhound.gd" id="1_pa65i"]
+[ext_resource type="Texture2D" uid="uid://i3tskw35cqhy" path="res://SPRITES/demon.png" id="2_5pc8u"]
+[ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_n4gm8"]
+[ext_resource type="Script" path="res://NODES/Hitbox.gd" id="4_uv6u8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ka2tk"]
+size = Vector2(123, 93)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t76ek"]
+radius = 460.027
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nv8tt"]
+radius = 64.0
+height = 186.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cl0mr"]
+radius = 62.0
+height = 178.0
+
+[node name="Hellhound" type="CharacterBody2D"]
+script = ExtResource("1_pa65i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("2_5pc8u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.5, 36.5)
+shape = SubResource("RectangleShape2D_ka2tk")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_t76ek")
+debug_color = Color(0.556863, 0.560784, 0, 0.117647)
+
+[node name="HurtBox" type="Area2D" parent="."]
+script = ExtResource("3_n4gm8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+shape = SubResource("CapsuleShape2D_nv8tt")
+debug_color = Color(0.996078, 0, 0.176471, 0.215686)
+
+[node name="Hitbox" type="Area2D" parent="."]
+script = ExtResource("4_uv6u8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CapsuleShape2D_cl0mr")
+debug_color = Color(0, 0.639216, 0.356863, 0.180392)
+
+[node name="Timer" type="Timer" parent="Hitbox"]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

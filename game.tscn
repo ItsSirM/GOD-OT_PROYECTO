@@ -1,10 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://1ibrkb0s21bm"]
+[gd_scene load_steps=14 format=3 uid="uid://1ibrkb0s21bm"]
 
 [ext_resource type="Texture2D" uid="uid://dtimj0qenksre" path="res://SPRITES/NEGRO.png" id="1_4p0ks"]
 [ext_resource type="PackedScene" uid="uid://cpdaaualfeimx" path="res://player.tscn" id="1_rmvcv"]
 [ext_resource type="Texture2D" uid="uid://b15se6yanwjsl" path="res://BACKGROUND/Asset 1.png" id="2_65imq"]
 [ext_resource type="PackedScene" uid="uid://cvdayy1bgyhvo" path="res://infected.tscn" id="4_d60ma"]
 [ext_resource type="PackedScene" uid="uid://dnicmc5msc2hs" path="res://HUD.tscn" id="5_g8av0"]
+[ext_resource type="PackedScene" uid="uid://bq0i0dy6w7jot" path="res://ENEMIES/Hellhound.tscn" id="6_fh41e"]
+[ext_resource type="PackedScene" uid="uid://gvybfol4xj6y" path="res://ENEMIES/Ghost.tscn" id="7_kgmsg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q288f"]
 texture = ExtResource("2_65imq")
@@ -66,11 +68,16 @@ shape = SubResource("RectangleShape2D_uj472")
 position = Vector2(649, -586.75)
 shape = SubResource("RectangleShape2D_3x5r3")
 
+[node name="HUD" parent="." instance=ExtResource("5_g8av0")]
+
 [node name="Infected" parent="." instance=ExtResource("4_d60ma")]
-y_sort_enabled = true
-position = Vector2(-394, -359)
+position = Vector2(-475, -348)
 
 [node name="Infected2" parent="." instance=ExtResource("4_d60ma")]
-position = Vector2(565, -172)
+position = Vector2(563, -215)
 
-[node name="HUD" parent="." instance=ExtResource("5_g8av0")]
+[node name="Hellhound" parent="." instance=ExtResource("6_fh41e")]
+position = Vector2(747, -1154)
+
+[node name="Ghost" parent="." instance=ExtResource("7_kgmsg")]
+position = Vector2(-314, -932)

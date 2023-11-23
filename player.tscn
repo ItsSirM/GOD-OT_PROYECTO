@@ -1,7 +1,8 @@
-[gd_scene load_steps=70 format=3 uid="uid://cpdaaualfeimx"]
+[gd_scene load_steps=71 format=3 uid="uid://cpdaaualfeimx"]
 
 [ext_resource type="Script" path="res://PLAYER.gd" id="1_2nbpp"]
 [ext_resource type="Texture2D" uid="uid://pawbywe8joon" path="res://SPRITES/Ninja_PN.png" id="1_mgu3m"]
+[ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_wnvnd"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yt7nk"]
 atlas = ExtResource("1_mgu3m")
@@ -497,8 +498,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sfnqt"]
 size = Vector2(88, 93)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vxpw"]
-size = Vector2(102, 157)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ke6c4"]
+radius = 38.0
+height = 146.0
 
 [node name="PLAYER" type="CharacterBody2D"]
 up_direction = Vector2(-0.382852, -0.92381)
@@ -517,9 +519,10 @@ shape = SubResource("RectangleShape2D_sfnqt")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="HurtBox" type="Area2D" parent="."]
+monitorable = false
+script = ExtResource("3_wnvnd")
 
-[node name="Hitbox" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, -2.5)
-shape = SubResource("RectangleShape2D_8vxpw")
-debug_color = Color(0.886275, 0.376471, 0.564706, 0.419608)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+shape = SubResource("CapsuleShape2D_ke6c4")
+debug_color = Color(0.772549, 0, 0.117647, 0.27451)

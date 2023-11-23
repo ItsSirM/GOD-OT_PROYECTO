@@ -5,10 +5,10 @@ var speed = 1200
 var health = 100
 
 # Añade una referencia a tu nodo de bala aquí
-@onready var bullet = preload("res://BALA.tscn")
+@onready var bullet = preload("res://NODES/Bala2.tscn")
 
 # Tiempo de intervalo para disparar
-var fire_rate = 0.07
+var fire_rate = 0.5
 var time_since_last_shot = 0.0
 
 func _ready():
@@ -52,5 +52,12 @@ func _physics_process(delta):
 func shoot():
 	var b = bullet.instantiate()
 	b.global_position = global_position
-	b.set_direction(get_global_mouse_position() - global_position)
+	b.direction = global_position.direction_to(get_global_mouse_position())
 	get_parent().add_child(b)
+
+func player_damaged(damage: int):
+	health -= damage
+	get_parent().get_node("HUD/Panel/HealthText").text = str(health)
+	if health <= 0:
+		get_parent().get_node("HUD/Panel/HealthText").text = str(0)
+		self.queue_free()

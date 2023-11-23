@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://gvybfol4xj6y"]
+
+[ext_resource type="Script" path="res://ENEMIES/Ghost.gd" id="1_p73ts"]
+[ext_resource type="Texture2D" uid="uid://bpt1smaov4bec" path="res://SPRITES/ghost.png" id="2_uok1j"]
+[ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_qeao5"]
+[ext_resource type="Script" path="res://NODES/Hitbox.gd" id="4_6r308"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyyda"]
+size = Vector2(68, 98)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xcyr6"]
+radius = 474.105
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g22m3"]
+radius = 49.0
+height = 182.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y0oj2"]
+radius = 47.0
+height = 178.0
+
+[node name="Ghost" type="CharacterBody2D"]
+script = ExtResource("1_p73ts")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("2_uok1j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 39)
+shape = SubResource("RectangleShape2D_gyyda")
+debug_color = Color(0, 0.6, 0.701961, 0.164706)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_xcyr6")
+debug_color = Color(0.556863, 0.560784, 0, 0.196078)
+
+[node name="HurtBox" type="Area2D" parent="."]
+script = ExtResource("3_qeao5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+shape = SubResource("CapsuleShape2D_g22m3")
+debug_color = Color(0.85098, 0, 0.164706, 0.152941)
+
+[node name="Hitbox" type="Area2D" parent="."]
+script = ExtResource("4_6r308")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("CapsuleShape2D_y0oj2")
+debug_color = Color(0.0196078, 0.65098, 0, 0.180392)
+
+[node name="Timer" type="Timer" parent="Hitbox"]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
