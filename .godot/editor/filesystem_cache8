@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700788627
+::res://::1700789266
 BALA.gd::GDScript::-1::1700787551::0::1::::<>Area2D<>::
 BALA.tscn::PackedScene::4821636177365555330::1700787952::0::1::::<><>::uid://tbx8a43svsm
 ENEMIGO1.gd::GDScript::-1::1700787551::0::1::::<>CharacterBody2D<>::
@@ -7,30 +7,30 @@ ENEMIGO2.gd::GDScript::-1::1700787551::0::1::::<>RigidBody2D<>::
 enemigo_1.tscn::PackedScene::6833073666459342875::1700787551::0::1::::<><>::res://ENEMIGO1.gd<>uid://bpu2kf17runy5
 ENEMIGO_2.gd::GDScript::-1::1700787551::0::1::::<>RigidBody2D<>::
 enemy.tscn::PackedScene::7788811798671550706::1700787551::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon
-game.tscn::PackedScene::1841516560049806702::1700788269::0::1::::<><>::uid://dtimj0qenksre::::res://SPRITES/NEGRO.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://bq0i0dy6w7jot::::res://ENEMIES/Hellhound.tscn<>uid://gvybfol4xj6y::::res://ENEMIES/Ghost.tscn
+game.tscn::PackedScene::1841516560049806702::1700788821::0::1::::<><>::uid://dtimj0qenksre::::res://SPRITES/NEGRO.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://bq0i0dy6w7jot::::res://ENEMIES/Hellhound.tscn<>uid://gvybfol4xj6y::::res://ENEMIES/Ghost.tscn<>uid://bgv5fkqrfpme7::::res://MUSICA/a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3
 HUD.tscn::PackedScene::8088375055878816028::1700787950::0::1::::<><>::
 infected.gd::GDScript::-1::1700787952::0::1::::<>CharacterBody2D<>::
-infected.tscn::PackedScene::6253044376880502836::1700788269::0::1::::<><>::res://infected.gd<>uid://dchmjvayoapcs::::res://SPRITES/zombie.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
+infected.tscn::PackedScene::6253044376880502836::1700788821::0::1::::<><>::res://infected.gd<>uid://dchmjvayoapcs::::res://SPRITES/zombie.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
 personajes.tscn::PackedScene::4746558821491312737::1700787551::0::1::::<><>::res://PLAYER1.gd<>uid://b7arnkbq7s50l
 PLAYER1.gd::GDScript::-1::1700787551::0::1::::<>CharacterBody2D<>::
 PLAYER.gd::GDScript::-1::1700787952::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::5831868206192508319::1700788269::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon::::res://SPRITES/Ninja_PN.png<>res://NODES/Hurtbox.gd
+player.tscn::PackedScene::5831868206192508319::1700788821::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon::::res://SPRITES/Ninja_PN.png<>res://NODES/Hurtbox.gd
 ::res://BACKGROUND/::1700787551
 Asset 1.png::CompressedTexture2D::4274363665266560787::1700787551::1700787551::1::::<><>::
 walls_sheet.png::CompressedTexture2D::2154590380756364509::1700787551::1700787551::1::::<><>::
-::res://ENEMIES/::1700788270
+::res://ENEMIES/::1700788821
 Ghost.gd::GDScript::-1::1700787952::0::1::::<>CharacterBody2D<>::
-Ghost.tscn::PackedScene::465944273067221058::1700788270::0::1::::<><>::res://ENEMIES/Ghost.gd<>uid://bpt1smaov4bec::::res://SPRITES/ghost.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
+Ghost.tscn::PackedScene::465944273067221058::1700788821::0::1::::<><>::res://ENEMIES/Ghost.gd<>uid://bpt1smaov4bec::::res://SPRITES/ghost.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
 Hellhound.gd::GDScript::-1::1700787952::0::1::::<>CharacterBody2D<>::
-Hellhound.tscn::PackedScene::3561582202627390291::1700788269::0::1::::<><>::res://ENEMIES/Hellhound.gd<>uid://i3tskw35cqhy::::res://SPRITES/demon.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
+Hellhound.tscn::PackedScene::3561582202627390291::1700788821::0::1::::<><>::res://ENEMIES/Hellhound.gd<>uid://i3tskw35cqhy::::res://SPRITES/demon.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
 ::res://MUSICA/::1700788636
 a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3::AudioStreamMP3::2852736667839128640::1700788636::1700788636::1::::<><>::
-::res://NODES/::1700788269
+::res://NODES/::1700789183
 Bala2.gd::GDScript::-1::1700787952::0::1::::Bala2<>Node2D<>::
-Bala2.tscn::PackedScene::3380182337211113924::1700788269::0::1::::<><>::res://NODES/Bala2.gd<>uid://tbx8a43svsm::::res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png<>res://NODES/Hitbox.gd
+Bala2.tscn::PackedScene::3380182337211113924::1700788821::0::1::::<><>::res://NODES/Bala2.gd<>uid://tbx8a43svsm::::res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png<>res://NODES/Hitbox.gd
 Hitbox.gd::GDScript::-1::1700787952::0::1::::Hitbox<>Area2D<>::
 hitbox.tscn::PackedScene::4891329031922340051::1700787952::0::1::::<><>::
-Hurtbox.gd::GDScript::-1::1700787975::0::1::::HurtBox<>Area2D<>::
+Hurtbox.gd::GDScript::-1::1700789183::0::1::::HurtBox<>Area2D<>::
 ::res://SCRIPT/::1700787551
 GLOBAL.gd::GDScript::-1::1700787551::0::1::::<>Node<>::
 ::res://SPRITES/::1700787952
