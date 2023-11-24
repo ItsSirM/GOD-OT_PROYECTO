@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://1ibrkb0s21bm"]
+[gd_scene load_steps=15 format=3 uid="uid://1ibrkb0s21bm"]
 
 [ext_resource type="Texture2D" uid="uid://dtimj0qenksre" path="res://SPRITES/NEGRO.png" id="1_4p0ks"]
 [ext_resource type="PackedScene" uid="uid://cpdaaualfeimx" path="res://player.tscn" id="1_rmvcv"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dnicmc5msc2hs" path="res://HUD.tscn" id="5_g8av0"]
 [ext_resource type="PackedScene" uid="uid://bq0i0dy6w7jot" path="res://ENEMIES/Hellhound.tscn" id="6_fh41e"]
 [ext_resource type="PackedScene" uid="uid://gvybfol4xj6y" path="res://ENEMIES/Ghost.tscn" id="7_kgmsg"]
+[ext_resource type="AudioStream" uid="uid://bgv5fkqrfpme7" path="res://MUSICA/a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3" id="8_k1b4f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q288f"]
 texture = ExtResource("2_65imq")
@@ -82,3 +83,8 @@ position = Vector2(747, -1154)
 
 [node name="Ghost" parent="." instance=ExtResource("7_kgmsg")]
 position = Vector2(-314, -932)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_k1b4f")
+volume_db = 0.125
+autoplay = true
