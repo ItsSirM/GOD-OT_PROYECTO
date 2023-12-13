@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5xx123jchpub"
-path="res://.godot/imported/walls_sheet.png-59fed12da7d0e0b95f9b70c80c7c8bc8.ctex"
+uid="uid://dxk30utr8c40t"
+path="res://.godot/imported/TX Props XZ.png-63037b693ffed27ccad71038f517f537.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BACKGROUND/walls_sheet.png"
-dest_files=["res://.godot/imported/walls_sheet.png-59fed12da7d0e0b95f9b70c80c7c8bc8.ctex"]
+source_file="res://BACKGROUND/TX Props XZ.png"
+dest_files=["res://.godot/imported/TX Props XZ.png-63037b693ffed27ccad71038f517f537.ctex"]
 
 [params]
 

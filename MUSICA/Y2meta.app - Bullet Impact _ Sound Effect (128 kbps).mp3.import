@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cl23ie7d1f76h"
+path="res://.godot/imported/Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3-57bac1f1fe4b5368c1a10c0f494d4741.mp3str"
+
+[deps]
+
+source_file="res://MUSICA/Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3"
+dest_files=["res://.godot/imported/Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3-57bac1f1fe4b5368c1a10c0f494d4741.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
