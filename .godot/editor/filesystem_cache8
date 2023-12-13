@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702489251
+::res://::1702491251
 BALA.gd::GDScript::-1::1700943269::0::1::::<>Area2D<>::
 BALA.tscn::PackedScene::4821636177365555330::1700943269::0::1::::<><>::uid://tbx8a43svsm
 ENEMIGO1.gd::GDScript::-1::1700943269::0::1::::<>CharacterBody2D<>::
@@ -7,21 +7,21 @@ ENEMIGO2.gd::GDScript::-1::1700943269::0::1::::<>RigidBody2D<>::
 enemigo_1.tscn::PackedScene::6833073666459342875::1700943269::0::1::::<><>::res://ENEMIGO1.gd<>uid://bpu2kf17runy5
 ENEMIGO_2.gd::GDScript::-1::1700943269::0::1::::<>RigidBody2D<>::
 enemy.tscn::PackedScene::7788811798671550706::1700943269::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon
-game.tscn::PackedScene::7477086560933520626::1702489249::0::1::::<><>::uid://be1t4jjwtjmvm::::res://menu.tscn
+game.tscn::PackedScene::7477086560933520626::1702489801::0::1::::<><>::uid://be1t4jjwtjmvm::::res://menu.tscn
 HUD.tscn::PackedScene::8088375055878816028::1700943269::0::1::::<><>::
 infected.gd::GDScript::-1::1701444095::0::1::::<>CharacterBody2D<>::
-infected.tscn::PackedScene::6253044376880502836::1702489249::0::1::::<><>::res://infected.gd<>uid://dchmjvayoapcs::::res://SPRITES/zombie.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
+infected.tscn::PackedScene::6253044376880502836::1702489801::0::1::::<><>::res://infected.gd<>uid://dchmjvayoapcs::::res://SPRITES/zombie.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
 menu.gd::GDScript::-1::1700945858::0::1::::<>Control<>::
-menu.tscn::PackedScene::2722055778375318654::1702489249::0::1::::<><>::res://menu.gd
+menu.tscn::PackedScene::2722055778375318654::1702489801::0::1::::<><>::res://menu.gd
 NIVEL1.gd::GDScript::-1::1700948998::0::1::::<>Node2D<>::
-NIVEL1.tscn::PackedScene::1841516560049806702::1702489249::0::1::::<><>::res://NIVEL1.gd<>uid://dtimj0qenksre::::res://SPRITES/NEGRO.png<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://bq0i0dy6w7jot::::res://ENEMIES/Hellhound.tscn<>uid://gvybfol4xj6y::::res://ENEMIES/Ghost.tscn<>uid://bgv5fkqrfpme7::::res://MUSICA/a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3
-nivel_1.tscn::PackedScene::7831601721208132011::1702489251::0::1::::<><>::uid://k4buyti86t6e::::res://BACKGROUND/FONDONEGRO.png<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://mofy5dad3taj::::res://BACKGROUND/Texture/TX Tileset Grass.png<>uid://dxk30utr8c40t::::res://BACKGROUND/TX Props XZ.png<>uid://bvog2trqqrrf2::::res://BACKGROUND/decorative_props.png<>uid://d1757awn4teu0::::res://BACKGROUND/Texture/TX Plant.png<>uid://cgxo7dynsp7fx::::res://BACKGROUND/Texture/TX Shadow Plant.png<>uid://dav23i7xphcl0::::res://BACKGROUND/INTERIORES XLL.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://oj1ebiqfbs2a::::res://BACKGROUND/main_houses.png<>uid://c1l4rhobefy6::::res://BACKGROUND/Texture/TX Struct.png<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://m56cxmvdy77v::::res://BACKGROUND/Texture/TX Tileset Stone Ground.png<>uid://ceoc88fv80dte::::res://BACKGROUND/Texture/TX Props.png<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://c3i6s4jl0wok1::::res://BACKGROUND/main_houses (1).png<>uid://dkpnsdsnkhhim::::res://BACKGROUND/main_houses (2).png<>uid://buq8u1yt8jjg4::::res://BACKGROUND/TX PlantXL.png<>uid://xht3iknycwyu::::res://BACKGROUND/furniture (1).png<>uid://dmkhwnkqhyq5y::::res://BACKGROUND/furniture (3).png<>uid://ixacu1wwyy7k::::res://BACKGROUND/TX ShadowPlant XL.png<>uid://bdxk50okypkkp::::res://BACKGROUND/interiors (1).png<>uid://cyqegqqdetnsd::::res://BACKGROUND/decorative.png<>uid://7q1souq0kca4::::res://MUSICA/Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3<>uid://c80iocytjm0wq::::res://BACKGROUND/TX Struct XL.png<>uid://bdcgvtfpajuy8::::res://BACKGROUND/mainlevbuild.png<>uid://dsmc5j3l3p67q::::res://BACKGROUND/mainlevbuild (1).png
-nivel_2.tscn::PackedScene::2577312056137749617::1702489251::0::1::::<><>::
+NIVEL1.tscn::PackedScene::1841516560049806702::1702489801::0::1::::<><>::res://NIVEL1.gd<>uid://dtimj0qenksre::::res://SPRITES/NEGRO.png<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://bq0i0dy6w7jot::::res://ENEMIES/Hellhound.tscn<>uid://gvybfol4xj6y::::res://ENEMIES/Ghost.tscn<>uid://bgv5fkqrfpme7::::res://MUSICA/a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3
+nivel_1.tscn::PackedScene::7831601721208132011::1702490067::0::1::::<><>::uid://k4buyti86t6e::::res://BACKGROUND/FONDONEGRO.png<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://mofy5dad3taj::::res://BACKGROUND/Texture/TX Tileset Grass.png<>uid://dxk30utr8c40t::::res://BACKGROUND/TX Props XZ.png<>uid://bvog2trqqrrf2::::res://BACKGROUND/decorative_props.png<>uid://d1757awn4teu0::::res://BACKGROUND/Texture/TX Plant.png<>uid://cgxo7dynsp7fx::::res://BACKGROUND/Texture/TX Shadow Plant.png<>uid://dav23i7xphcl0::::res://BACKGROUND/INTERIORES XLL.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://oj1ebiqfbs2a::::res://BACKGROUND/main_houses.png<>uid://c1l4rhobefy6::::res://BACKGROUND/Texture/TX Struct.png<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://m56cxmvdy77v::::res://BACKGROUND/Texture/TX Tileset Stone Ground.png<>uid://ceoc88fv80dte::::res://BACKGROUND/Texture/TX Props.png<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://c3i6s4jl0wok1::::res://BACKGROUND/main_houses (1).png<>uid://dkpnsdsnkhhim::::res://BACKGROUND/main_houses (2).png<>uid://buq8u1yt8jjg4::::res://BACKGROUND/TX PlantXL.png<>uid://xht3iknycwyu::::res://BACKGROUND/furniture (1).png<>uid://dmkhwnkqhyq5y::::res://BACKGROUND/furniture (3).png<>uid://ixacu1wwyy7k::::res://BACKGROUND/TX ShadowPlant XL.png<>uid://bdxk50okypkkp::::res://BACKGROUND/interiors (1).png<>uid://cyqegqqdetnsd::::res://BACKGROUND/decorative.png<>uid://7q1souq0kca4::::res://MUSICA/Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3<>uid://c80iocytjm0wq::::res://BACKGROUND/TX Struct XL.png<>uid://bdcgvtfpajuy8::::res://BACKGROUND/mainlevbuild.png<>uid://dsmc5j3l3p67q::::res://BACKGROUND/mainlevbuild (1).png<>uid://bqio4p3qiy40u::::res://BACKGROUND/mainlevbuild (2).png
+nivel_2.tscn::PackedScene::2577312056137749617::1702489804::0::1::::<><>::
 personajes.tscn::PackedScene::4746558821491312737::1700943269::0::1::::<><>::res://PLAYER1.gd<>uid://b7arnkbq7s50l
 PLAYER1.gd::GDScript::-1::1700943269::0::1::::<>CharacterBody2D<>::
 PLAYER.gd::GDScript::-1::1700943483::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::5831868206192508319::1702489249::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon::::res://SPRITES/Ninja_PN.png<>res://NODES/Hurtbox.gd<>uid://cl23ie7d1f76h::::res://MUSICA/Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3
-::res://BACKGROUND/::1702489497
+player.tscn::PackedScene::5831868206192508319::1702489801::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon::::res://SPRITES/Ninja_PN.png<>res://NODES/Hurtbox.gd<>uid://cl23ie7d1f76h::::res://MUSICA/Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3
+::res://BACKGROUND/::1702489498
 Asset 1.png::CompressedTexture2D::4274363665266560787::1700943269::1700943269::1::::<><>::
 decorative.png::CompressedTexture2D::6490658106731317971::1702478501::1702478508::1::::<><>::
 decorative_props.png::CompressedTexture2D::3889701231995012945::1701738868::1701738883::1::::<><>::
@@ -52,18 +52,18 @@ TX Struct.png::CompressedTexture2D::194772088173471507::1701370722::1701136404::
 TX Tileset Grass.png::CompressedTexture2D::871515436570824357::1701370722::1701136403::1::::<><>::
 TX Tileset Stone Ground.png::CompressedTexture2D::906084482175592677::1701370722::1701136403::1::::<><>::
 TX Tileset Wall.png::CompressedTexture2D::1884264313686545249::1701370722::1701136404::1::::<><>::
-::res://ENEMIES/::1702489249
+::res://ENEMIES/::1702489801
 Ghost.gd::GDScript::-1::1700944858::0::1::::<>CharacterBody2D<>::
-Ghost.tscn::PackedScene::465944273067221058::1702489249::0::1::::<><>::res://ENEMIES/Ghost.gd<>uid://bpt1smaov4bec::::res://SPRITES/ghost.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
+Ghost.tscn::PackedScene::465944273067221058::1702489801::0::1::::<><>::res://ENEMIES/Ghost.gd<>uid://bpt1smaov4bec::::res://SPRITES/ghost.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
 Hellhound.gd::GDScript::-1::1700944858::0::1::::<>CharacterBody2D<>::
-Hellhound.tscn::PackedScene::3561582202627390291::1702489249::0::1::::<><>::res://ENEMIES/Hellhound.gd<>uid://i3tskw35cqhy::::res://SPRITES/demon.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
+Hellhound.tscn::PackedScene::3561582202627390291::1702489801::0::1::::<><>::res://ENEMIES/Hellhound.gd<>uid://i3tskw35cqhy::::res://SPRITES/demon.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
 ::res://MUSICA/::1701445030
 a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3::AudioStreamMP3::2852736667839128640::1700943269::1700943269::1::::<><>::
 Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3::AudioStreamMP3::2280684593567969797::1701445017::1701445030::1::::<><>::
 Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3::AudioStreamMP3::5602371468611299917::1700943392::1700943393::1::::<><>::
-::res://NODES/::1702489249
+::res://NODES/::1702489801
 Bala2.gd::GDScript::-1::1700943269::0::1::::Bala2<>Node2D<>::
-Bala2.tscn::PackedScene::3380182337211113924::1702489249::0::1::::<><>::res://NODES/Bala2.gd<>uid://tbx8a43svsm::::res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png<>res://NODES/Hitbox.gd
+Bala2.tscn::PackedScene::3380182337211113924::1702489801::0::1::::<><>::res://NODES/Bala2.gd<>uid://tbx8a43svsm::::res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png<>res://NODES/Hitbox.gd
 Hitbox.gd::GDScript::-1::1700943269::0::1::::Hitbox<>Area2D<>::
 hitbox.tscn::PackedScene::4891329031922340051::1700943269::0::1::::<><>::
 Hurtbox.gd::GDScript::-1::1702487842::0::1::::HurtBox<>Area2D<>::
