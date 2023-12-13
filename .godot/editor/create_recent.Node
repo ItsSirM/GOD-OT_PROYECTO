@@ -1,7 +1,7 @@
-TextureRect
-Node
 CollisionShape2D
 CollisionPolygon2D
+TextureRect
+Node
 AudioStreamPlayer2D
 StaticBody2D
 TileMap
