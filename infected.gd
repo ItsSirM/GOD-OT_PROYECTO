@@ -1,31 +1,20 @@
-extends CharacterBody2D
+class_name Infected
+extends Enemy
 
-var speed = 7.5
-var health = 20
-var player_chase = false
-@export var damage = 9
-@export var attackRate = 1.5
-@onready var player = get_node("/root/GAME/PLAYER")
-var targetPosition = 0
-
-func _physics_process(_delta):
-	if player_chase:
-		targetPosition = (player.position - position).normalized()
-		move_and_collide(targetPosition * speed)
-		
-func attack():
-	return attackRate
+func _init():
+	speed = 8
+	health = 20
+	player_chase = false
+	damage = 9
+	attackRate = 1.5
+	deathSprite = preload("res://SPRITES/zombie_Death.png")
 
 func damaged(damage_taken: int):
 	health -= damage_taken
 	if health <= 0:
-		self.queue_free()
-
-#Check if player entered enemy sight
-func _on_area_2d_body_entered(body):
-	if body == player:
-		player_chase = true
-
-func _on_area_2d_body_exited(body):
-	if body == player:
-		player_chase = false
+		get_node("Sprite2D").texture = deathSprite
+		get_node("CollisionShape2D").set_deferred("disabled", true)
+		get_node("Area2D/CollisionShape2D").set_deferred("disabled", true)
+		get_node("Hitbox/CollisionShape2D").set_deferred("disabled", true)
+		get_node("HurtBox/CollisionShape2D").set_deferred("disabled", true)
+		

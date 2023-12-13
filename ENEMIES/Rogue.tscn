@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://s6bmn07o7ndo"]
+
+[ext_resource type="Script" path="res://ENEMIES/Rogue.gd" id="1_hvnb1"]
+[ext_resource type="Texture2D" uid="uid://cl58uaoo3yq2f" path="res://SPRITES/zombie2.png" id="1_qhiny"]
+[ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="2_tboe2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uaa6x"]
+radius = 22.0
+height = 84.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6i2o3"]
+radius = 563.001
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sa1pa"]
+radius = 42.0
+height = 160.0
+
+[node name="Rogue" type="CharacterBody2D"]
+script = ExtResource("1_hvnb1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_qhiny")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 35)
+shape = SubResource("CapsuleShape2D_uaa6x")
+debug_color = Color(0, 0.6, 0.701961, 0.196078)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_6i2o3")
+debug_color = Color(0.607843, 0.541176, 0, 0.168627)
+
+[node name="HurtBox" type="Area2D" parent="."]
+script = ExtResource("2_tboe2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(-7, -1)
+shape = SubResource("CapsuleShape2D_sa1pa")
+debug_color = Color(0.996078, 0, 0.215686, 0.0784314)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

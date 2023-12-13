@@ -5,8 +5,8 @@
 [ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_n4gm8"]
 [ext_resource type="Script" path="res://NODES/Hitbox.gd" id="4_uv6u8"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ka2tk"]
-size = Vector2(123, 93)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3omm"]
+size = Vector2(100, 79)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t76ek"]
 radius = 460.027
@@ -28,8 +28,8 @@ scale = Vector2(3, 3)
 texture = ExtResource("2_5pc8u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3.5, 36.5)
-shape = SubResource("RectangleShape2D_ka2tk")
+position = Vector2(4, 39.5)
+shape = SubResource("RectangleShape2D_p3omm")
 
 [node name="Area2D" type="Area2D" parent="."]
 

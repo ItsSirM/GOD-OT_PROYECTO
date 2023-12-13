@@ -1,11 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://bofndyjxofqgq"]
+[gd_scene load_steps=7 format=3 uid="uid://bnq1vuy20ia5a"]
 
-[ext_resource type="Script" path="res://NODES/Bala2.gd" id="1_81dlk"]
-[ext_resource type="Texture2D" uid="uid://tbx8a43svsm" path="res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png" id="2_13xx4"]
-[ext_resource type="Script" path="res://NODES/Hitbox.gd" id="3_prpti"]
+[ext_resource type="Script" path="res://PROJECTILES/Bala2.gd" id="1_ldhb7"]
+[ext_resource type="Texture2D" uid="uid://tbx8a43svsm" path="res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png" id="2_l544d"]
+[ext_resource type="Script" path="res://NODES/Hitbox.gd" id="3_hpeih"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ajpyj"]
-atlas = ExtResource("2_13xx4")
+atlas = ExtResource("2_l544d")
 region = Rect2(176, 240, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2f8y6"]
@@ -23,7 +23,7 @@ animations = [{
 radius = 17.72
 
 [node name="Bala2" type="Node2D"]
-script = ExtResource("1_81dlk")
+script = ExtResource("1_ldhb7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -36,7 +36,7 @@ animation = &"BALA"
 collision_layer = 2
 collision_mask = 0
 monitoring = false
-script = ExtResource("3_prpti")
+script = ExtResource("3_hpeih")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(3, 3)

@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://qpr1cpuq3hhg"]
+
+[ext_resource type="Texture2D" uid="uid://21uegutserl5" path="res://SPRITES/Cacodemon.png" id="1_7yjtt"]
+[ext_resource type="Script" path="res://ENEMIES/Deformer.gd" id="1_wugrv"]
+[ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_rfxlp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_62ukt"]
+radius = 96.0469
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2db4e"]
+radius = 583.086
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bkxcs"]
+radius = 123.146
+
+[node name="Deformer" type="CharacterBody2D"]
+script = ExtResource("1_wugrv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_7yjtt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 32)
+shape = SubResource("CircleShape2D_62ukt")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_2db4e")
+debug_color = Color(0.627451, 0.533333, 0, 0.188235)
+
+[node name="HurtBox" type="Area2D" parent="."]
+script = ExtResource("3_rfxlp")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(-2, 15)
+shape = SubResource("CircleShape2D_bkxcs")
+debug_color = Color(0.87451, 0, 0.121569, 0.203922)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

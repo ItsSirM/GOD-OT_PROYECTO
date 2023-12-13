@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://dw7yi7y8i2qyc"]
+
+[ext_resource type="Script" path="res://ENEMIES/HlvlCyberGuard.gd" id="1_jtfrm"]
+[ext_resource type="Texture2D" uid="uid://c0ch47ggpngpu" path="res://SPRITES/BaronOfHell.png" id="2_vm275"]
+[ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_1o56t"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gh354"]
+radius = 73.0
+height = 260.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2xlst"]
+radius = 823.002
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tjgly"]
+radius = 118.0
+height = 350.0
+
+[node name="HlvlCyberGuard" type="CharacterBody2D"]
+script = ExtResource("1_jtfrm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("2_vm275")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-7, 35)
+shape = SubResource("CapsuleShape2D_gh354")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_2xlst")
+debug_color = Color(0.560784, 0.560784, 0, 0.180392)
+
+[node name="HurtBox" type="Area2D" parent="."]
+script = ExtResource("3_1o56t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(-10, 1)
+shape = SubResource("CapsuleShape2D_tjgly")
+debug_color = Color(0.866667, 0, 0.12549, 0.121569)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

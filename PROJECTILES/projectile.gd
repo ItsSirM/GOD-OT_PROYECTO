@@ -1,11 +1,10 @@
-class_name Bala2
+class_name Projectile
 extends Node2D
 
-@export var speed = 1500
-@export var life = 1.2
-@export var damage = 10
+@export var speed : int
+@export var life : float
+@export var damage : int
 var direction = Vector2.ZERO
-
 @onready var timer = $Timer
 @onready var sprite = $AnimatedSprite2D
 @onready var impactD = $ImpactDetector
@@ -21,9 +20,8 @@ func _ready():
 func _physics_process(delta: float):
 	position += direction * speed * delta
 	
-func _on_impact(body: Node):
-	if body.name != "PLAYER":
-		queue_free()
+func _on_impact(_body: Node):
+	self.queue_free()
 	
 func getDamage() -> int:
 	return damage

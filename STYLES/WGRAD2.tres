@@ -1,0 +1,6 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://chn5yksv7cu6t"]
+
+[ext_resource type="Texture2D" uid="uid://nt8prkgcpmcx" path="res://HUDicons/WGrad2.png" id="1_54bub"]
+
+[resource]
+texture = ExtResource("1_54bub")

@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://ddkam61odhrgg"]
+
+[ext_resource type="Script" path="res://PROJECTILES/BalaR.gd" id="1_4e5ff"]
+[ext_resource type="Texture2D" uid="uid://tbx8a43svsm" path="res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png" id="2_p54hp"]
+[ext_resource type="Script" path="res://NODES/Hitbox.gd" id="3_u3ch1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajpyj"]
+atlas = ExtResource("2_p54hp")
+region = Rect2(176, 240, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3to6f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajpyj")
+}],
+"loop": true,
+"name": &"BALA",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dwoks"]
+radius = 18.0278
+
+[node name="BalaR" type="Node2D"]
+script = ExtResource("1_4e5ff")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(6.2334, 5.86329)
+sprite_frames = SubResource("SpriteFrames_3to6f")
+animation = &"BALA"
+
+[node name="Hitbox" type="Area2D" parent="."]
+script = ExtResource("3_u3ch1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(3, 3)
+shape = SubResource("CircleShape2D_dwoks")
+debug_color = Color(0.92549, 0, 0.309804, 0.419608)
+
+[node name="ImpactDetector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ImpactDetector"]
+position = Vector2(3, 3)
+shape = SubResource("CircleShape2D_dwoks")
+debug_color = Color(0.92549, 0, 0.309804, 0.419608)
+
+[node name="Timer" type="Timer" parent="."]

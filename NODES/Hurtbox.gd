@@ -12,16 +12,19 @@ func _ready():
 	area_exited.connect(self._on_area_exited)
 	
 func _on_area_exited(hitbox: Hitbox):
-	if owner.has_method("player_damaged") && !hitbox.owner is Bala2:
+	if owner is Player && !hitbox.owner is Projectile:
 		hitbox.timer.stop()
 
 func _on_area_entered(hitbox: Hitbox):
-	if owner.has_method("player_damaged") && !hitbox.owner is Bala2:
+	if owner is Player && !hitbox.owner is Bala2:
 		damage = hitbox.damage
-		hitbox.timer.timeout.connect(self._on_timeout)
-		hitbox.timer.start(hitbox.cooldown)
+		if hitbox.owner is Infected || hitbox.owner is Hellhound || hitbox.owner is Ghost:
+			hitbox.timer.timeout.connect(self._on_timeout)
+			hitbox.timer.start(hitbox.cooldown)
+		else:
+			owner.player_damaged(damage)
 	
-	if owner.has_method("damaged") && hitbox.owner is Bala2:
+	if owner is Enemy && hitbox.owner is Bala2  || hitbox.owner is Rocket:
 		owner.damaged(hitbox.damage)
 		
 func _on_timeout():

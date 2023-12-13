@@ -1,7 +1,10 @@
-res://game.tscn
 res://NODES/Hurtbox.gd
+res://STYLES/WGRAD1.tres
+res://PROJECTILES/Rocket.tscn
+res://PROJECTILES/Rocket.gd
+res://game.tscn
 res://player.tscn
-res://NODES/Bala2.tscn
-res://infected.tscn
-res://ENEMIES/Hellhound.tscn
-res://ENEMIES/Ghost.tscn
+res://HUD.tscn
+res://ENEMIES/CyberGuard.tscn
+res://PROJECTILES/Bala2.tscn
+res://PLAYER.gd

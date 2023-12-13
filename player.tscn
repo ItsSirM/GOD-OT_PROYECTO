@@ -496,7 +496,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sfnqt"]
-size = Vector2(88, 93)
+size = Vector2(73, 89)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ke6c4"]
 radius = 38.0
@@ -514,7 +514,7 @@ sprite_frames = SubResource("SpriteFrames_jhal1")
 animation = &"MOVERSE_ARRIBA"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 24.5)
+position = Vector2(-0.5, 22.5)
 shape = SubResource("RectangleShape2D_sfnqt")
 
 [node name="Camera2D" type="Camera2D" parent="."]

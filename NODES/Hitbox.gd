@@ -7,9 +7,9 @@ extends Area2D
 @onready var timer := $Timer
 
 func _ready():
-	if owner.has_method("getDamage"):
+	if owner is Projectile:
 		damage = owner.damage
-	elif owner.has_method("attack"):
+	elif owner is Enemy:
 		damage = owner.damage
 		cooldown = owner.attackRate
 
