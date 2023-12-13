@@ -1,7 +1,11 @@
-res://game.tscn
+res://nivel_1.tscn
 res://NODES/Hurtbox.gd
+res://NIVEL1.tscn
 res://player.tscn
 res://NODES/Bala2.tscn
 res://infected.tscn
 res://ENEMIES/Hellhound.tscn
 res://ENEMIES/Ghost.tscn
+res://menu.tscn
+res://game.tscn
+res://nivel_2.tscn

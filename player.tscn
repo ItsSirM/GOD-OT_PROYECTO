@@ -1,8 +1,9 @@
-[gd_scene load_steps=71 format=3 uid="uid://cpdaaualfeimx"]
+[gd_scene load_steps=72 format=3 uid="uid://cpdaaualfeimx"]
 
 [ext_resource type="Script" path="res://PLAYER.gd" id="1_2nbpp"]
 [ext_resource type="Texture2D" uid="uid://pawbywe8joon" path="res://SPRITES/Ninja_PN.png" id="1_mgu3m"]
 [ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_wnvnd"]
+[ext_resource type="AudioStream" uid="uid://cl23ie7d1f76h" path="res://MUSICA/Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3" id="4_r6g3n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yt7nk"]
 atlas = ExtResource("1_mgu3m")
@@ -496,7 +497,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sfnqt"]
-size = Vector2(88, 93)
+size = Vector2(50, 90)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ke6c4"]
 radius = 38.0
@@ -509,12 +510,12 @@ script = ExtResource("1_2nbpp")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 position = Vector2(0, -2.99999)
-scale = Vector2(4.32422, 4.21484)
+scale = Vector2(2.52, 2.456)
 sprite_frames = SubResource("SpriteFrames_jhal1")
 animation = &"MOVERSE_ARRIBA"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 24.5)
+position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_sfnqt")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -526,3 +527,7 @@ script = ExtResource("3_wnvnd")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
 shape = SubResource("CapsuleShape2D_ke6c4")
 debug_color = Color(0.772549, 0, 0.117647, 0.27451)
+
+[node name="SonidoBala" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_r6g3n")
+volume_db = -5.073

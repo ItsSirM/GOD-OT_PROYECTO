@@ -1,48 +1,82 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700789266
-BALA.gd::GDScript::-1::1700787551::0::1::::<>Area2D<>::
-BALA.tscn::PackedScene::4821636177365555330::1700787952::0::1::::<><>::uid://tbx8a43svsm
-ENEMIGO1.gd::GDScript::-1::1700787551::0::1::::<>CharacterBody2D<>::
-ENEMIGO2.gd::GDScript::-1::1700787551::0::1::::<>RigidBody2D<>::
-enemigo_1.tscn::PackedScene::6833073666459342875::1700787551::0::1::::<><>::res://ENEMIGO1.gd<>uid://bpu2kf17runy5
-ENEMIGO_2.gd::GDScript::-1::1700787551::0::1::::<>RigidBody2D<>::
-enemy.tscn::PackedScene::7788811798671550706::1700787551::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon
-game.tscn::PackedScene::1841516560049806702::1700788821::0::1::::<><>::uid://dtimj0qenksre::::res://SPRITES/NEGRO.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://bq0i0dy6w7jot::::res://ENEMIES/Hellhound.tscn<>uid://gvybfol4xj6y::::res://ENEMIES/Ghost.tscn<>uid://bgv5fkqrfpme7::::res://MUSICA/a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3
-HUD.tscn::PackedScene::8088375055878816028::1700787950::0::1::::<><>::
-infected.gd::GDScript::-1::1700787952::0::1::::<>CharacterBody2D<>::
-infected.tscn::PackedScene::6253044376880502836::1700788821::0::1::::<><>::res://infected.gd<>uid://dchmjvayoapcs::::res://SPRITES/zombie.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
-personajes.tscn::PackedScene::4746558821491312737::1700787551::0::1::::<><>::res://PLAYER1.gd<>uid://b7arnkbq7s50l
-PLAYER1.gd::GDScript::-1::1700787551::0::1::::<>CharacterBody2D<>::
-PLAYER.gd::GDScript::-1::1700787952::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::5831868206192508319::1700788821::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon::::res://SPRITES/Ninja_PN.png<>res://NODES/Hurtbox.gd
-::res://BACKGROUND/::1700787551
-Asset 1.png::CompressedTexture2D::4274363665266560787::1700787551::1700787551::1::::<><>::
-walls_sheet.png::CompressedTexture2D::2154590380756364509::1700787551::1700787551::1::::<><>::
-::res://ENEMIES/::1700788821
-Ghost.gd::GDScript::-1::1700787952::0::1::::<>CharacterBody2D<>::
-Ghost.tscn::PackedScene::465944273067221058::1700788821::0::1::::<><>::res://ENEMIES/Ghost.gd<>uid://bpt1smaov4bec::::res://SPRITES/ghost.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
-Hellhound.gd::GDScript::-1::1700787952::0::1::::<>CharacterBody2D<>::
-Hellhound.tscn::PackedScene::3561582202627390291::1700788821::0::1::::<><>::res://ENEMIES/Hellhound.gd<>uid://i3tskw35cqhy::::res://SPRITES/demon.png<>res://NODES/Hurtbox.gd<>res://NODES/Hitbox.gd
-::res://MUSICA/::1700788636
-a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3::AudioStreamMP3::2852736667839128640::1700788636::1700788636::1::::<><>::
-::res://NODES/::1700789183
-Bala2.gd::GDScript::-1::1700787952::0::1::::Bala2<>Node2D<>::
-Bala2.tscn::PackedScene::3380182337211113924::1700788821::0::1::::<><>::res://NODES/Bala2.gd<>uid://tbx8a43svsm::::res://SPRITES/All_Fire_Bullet_Pixel_16x16_00.png<>res://NODES/Hitbox.gd
-Hitbox.gd::GDScript::-1::1700787952::0::1::::Hitbox<>Area2D<>::
-hitbox.tscn::PackedScene::4891329031922340051::1700787952::0::1::::<><>::
-Hurtbox.gd::GDScript::-1::1700789183::0::1::::HurtBox<>Area2D<>::
-::res://SCRIPT/::1700787551
-GLOBAL.gd::GDScript::-1::1700787551::0::1::::<>Node<>::
-::res://SPRITES/::1700787952
-All_Fire_Bullet_Pixel_16x16_00.png::CompressedTexture2D::39326702206046644::1700787551::1700787551::1::::<><>::
-demon.png::CompressedTexture2D::620499653902361654::1700787952::1700787952::1::::<><>::
-ghost.png::CompressedTexture2D::3480087932638440582::1700787952::1700787952::1::::<><>::
-imp.png::CompressedTexture2D::637059745227654431::1700787551::1700787551::1::::<><>::
-NEGRO.png::CompressedTexture2D::8510111116292891054::1700787551::1700787551::1::::<><>::
-Ninja_PN.png::CompressedTexture2D::1054171508977564665::1700787551::1700787551::1::::<><>::
-Ninja_Style_2_P1.png::CompressedTexture2D::3482198414347644594::1700787551::1700787551::1::::<><>::
-Ninja_Style_2_P3.png::CompressedTexture2D::4633519611856709285::1700787551::1700787551::1::::<><>::
-Ninja_Style_3_PN.png::CompressedTexture2D::5030146856875992852::1700787551::1700787551::1::::<><>::
-soul.png::CompressedTexture2D::1569782934813068818::1700787952::1700787952::1::::<><>::
-zombie2.png::CompressedTexture2D::5608889378967480731::1700787551::1700787551::1::::<><>::
-zombie.png::CompressedTexture2D::7314836162791657330::1700787551::1700787551::1::::<><>::
+::res://::1702478770
+BALA.gd::GDScript::-1::1700943269::0::1::::<>Area2D<>::
+BALA.tscn::PackedScene::4821636177365555330::1700943269::0::1::::<><>::uid://tbx8a43svsm
+ENEMIGO1.gd::GDScript::-1::1700943269::0::1::::<>CharacterBody2D<>::
+ENEMIGO2.gd::GDScript::-1::1700943269::0::1::::<>RigidBody2D<>::
+enemigo_1.tscn::PackedScene::6833073666459342875::1700943269::0::1::::<><>::res://ENEMIGO1.gd<>uid://bpu2kf17runy5
+ENEMIGO_2.gd::GDScript::-1::1700943269::0::1::::<>RigidBody2D<>::
+enemy.tscn::PackedScene::7788811798671550706::1700943269::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon
+game.tscn::PackedScene::7477086560933520626::1702171843::0::1::::<><>::uid://be1t4jjwtjmvm
+HUD.tscn::PackedScene::8088375055878816028::1700943269::0::1::::<><>::
+infected.gd::GDScript::-1::1701444095::0::1::::<>CharacterBody2D<>::
+infected.tscn::PackedScene::6253044376880502836::1702171842::0::1::::<><>::res://infected.gd<>uid://dchmjvayoapcs
+menu.gd::GDScript::-1::1700945858::0::1::::<>Control<>::
+menu.tscn::PackedScene::2722055778375318654::1702171843::0::1::::<><>::res://menu.gd
+NIVEL1.gd::GDScript::-1::1700948998::0::1::::<>Node2D<>::
+NIVEL1.tscn::PackedScene::1841516560049806702::1702171842::0::1::::<><>::res://NIVEL1.gd<>uid://dtimj0qenksre
+nivel_1.tscn::PackedScene::7831601721208132011::1702478739::0::1::::<><>::uid://k4buyti86t6e::::res://BACKGROUND/FONDONEGRO.png<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://mofy5dad3taj::::res://BACKGROUND/Texture/TX Tileset Grass.png<>uid://dxk30utr8c40t::::res://BACKGROUND/TX Props XZ.png<>uid://bvog2trqqrrf2::::res://BACKGROUND/decorative_props.png<>uid://d1757awn4teu0::::res://BACKGROUND/Texture/TX Plant.png<>uid://cgxo7dynsp7fx::::res://BACKGROUND/Texture/TX Shadow Plant.png<>uid://dav23i7xphcl0::::res://BACKGROUND/INTERIORES XLL.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://oj1ebiqfbs2a::::res://BACKGROUND/main_houses.png<>uid://c1l4rhobefy6::::res://BACKGROUND/Texture/TX Struct.png<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://m56cxmvdy77v::::res://BACKGROUND/Texture/TX Tileset Stone Ground.png<>uid://ceoc88fv80dte::::res://BACKGROUND/Texture/TX Props.png<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://c3i6s4jl0wok1::::res://BACKGROUND/main_houses (1).png<>uid://dkpnsdsnkhhim::::res://BACKGROUND/main_houses (2).png<>uid://buq8u1yt8jjg4::::res://BACKGROUND/TX PlantXL.png<>uid://xht3iknycwyu::::res://BACKGROUND/furniture (1).png<>uid://dmkhwnkqhyq5y::::res://BACKGROUND/furniture (3).png<>uid://ixacu1wwyy7k::::res://BACKGROUND/TX ShadowPlant XL.png<>uid://bdxk50okypkkp::::res://BACKGROUND/interiors (1).png<>uid://cyqegqqdetnsd::::res://BACKGROUND/decorative.png<>uid://7q1souq0kca4::::res://MUSICA/Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3<>uid://c80iocytjm0wq::::res://BACKGROUND/TX Struct XL.png<>uid://bdcgvtfpajuy8::::res://BACKGROUND/mainlevbuild.png<>uid://dsmc5j3l3p67q::::res://BACKGROUND/mainlevbuild (1).png
+personajes.tscn::PackedScene::4746558821491312737::1700943269::0::1::::<><>::res://PLAYER1.gd<>uid://b7arnkbq7s50l
+PLAYER1.gd::GDScript::-1::1700943269::0::1::::<>CharacterBody2D<>::
+PLAYER.gd::GDScript::-1::1700943483::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::5831868206192508319::1702171842::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon
+::res://BACKGROUND/::1702478663
+Asset 1.png::CompressedTexture2D::4274363665266560787::1700943269::1700943269::1::::<><>::
+decorative.png::CompressedTexture2D::6490658106731317971::1702478501::1702478508::1::::<><>::
+decorative_props.png::CompressedTexture2D::3889701231995012945::1701738868::1701738883::1::::<><>::
+FONDONEGRO.png::CompressedTexture2D::761853114439433014::1701739751::1701739751::1::::<><>::
+furniture (1).png::CompressedTexture2D::1629998109302745932::1701741309::1701741324::1::::<><>::
+furniture (3).png::CompressedTexture2D::8022636957680442500::1702156321::1702156335::1::::<><>::
+INTERIORES XLL.png::CompressedTexture2D::7204303815634470175::1702156591::1702156592::1::::<><>::
+interiors (1).png::CompressedTexture2D::2645129981893427779::1701741441::1701741442::1::::<><>::
+mainlevbuild (1).png::CompressedTexture2D::8447609293917791716::1702478661::1702478663::1::::<><>::
+mainlevbuild.png::CompressedTexture2D::2601518780093503241::1702478587::1702478588::1::::<><>::
+main_houses (1).png::CompressedTexture2D::6756559919964108806::1701740419::1701740420::1::::<><>::
+main_houses (2).png::CompressedTexture2D::7892937804947613104::1701740511::1701740512::1::::<><>::
+main_houses.png::CompressedTexture2D::1002809061322033974::1701739052::1701739052::1::::<><>::
+TX PlantXL.png::CompressedTexture2D::3825268380748242629::1701443010::1701443011::1::::<><>::
+TX Props XL.png::CompressedTexture2D::2247320918290681198::1701443298::1701443298::1::::<><>::
+TX Props XLL.png::CompressedTexture2D::2994400570569945016::1701443380::1701443381::1::::<><>::
+TX Props XZ.png::CompressedTexture2D::8795995033574630233::1701443515::1701443516::1::::<><>::
+TX ShadowPlant XL.png::CompressedTexture2D::608996100697312266::1701443128::1701443128::1::::<><>::
+TX Struct XL.png::CompressedTexture2D::7141193531347373104::1702157581::1702157596::1::::<><>::
+::res://BACKGROUND/Texture/::1701445021
+TX Plant.png::CompressedTexture2D::9052110763601872089::1701370722::1701136404::1::::<><>::
+TX Player.png::CompressedTexture2D::7615268463577002133::1701370722::1701136403::1::::<><>::
+TX Props.png::CompressedTexture2D::5082680137673369550::1701370722::1701136404::1::::<><>::
+TX Shadow Plant.png::CompressedTexture2D::5242362496122156153::1701370722::1701136403::1::::<><>::
+TX Shadow.png::CompressedTexture2D::5442552835996835147::1701370722::1701136403::1::::<><>::
+TX Struct.png::CompressedTexture2D::194772088173471507::1701370722::1701136404::1::::<><>::
+TX Tileset Grass.png::CompressedTexture2D::871515436570824357::1701370722::1701136403::1::::<><>::
+TX Tileset Stone Ground.png::CompressedTexture2D::906084482175592677::1701370722::1701136403::1::::<><>::
+TX Tileset Wall.png::CompressedTexture2D::1884264313686545249::1701370722::1701136404::1::::<><>::
+::res://ENEMIES/::1702171843
+Ghost.gd::GDScript::-1::1700944858::0::1::::<>CharacterBody2D<>::
+Ghost.tscn::PackedScene::465944273067221058::1702171843::0::1::::<><>::res://ENEMIES/Ghost.gd<>uid://bpt1smaov4bec
+Hellhound.gd::GDScript::-1::1700944858::0::1::::<>CharacterBody2D<>::
+Hellhound.tscn::PackedScene::3561582202627390291::1702171842::0::1::::<><>::res://ENEMIES/Hellhound.gd<>uid://i3tskw35cqhy
+::res://MUSICA/::1701445030
+a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3::AudioStreamMP3::2852736667839128640::1700943269::1700943269::1::::<><>::
+Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3::AudioStreamMP3::2280684593567969797::1701445017::1701445030::1::::<><>::
+Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3::AudioStreamMP3::5602371468611299917::1700943392::1700943393::1::::<><>::
+::res://NODES/::1702478739
+Bala2.gd::GDScript::-1::1700943269::0::1::::Bala2<>Node2D<>::
+Bala2.tscn::PackedScene::3380182337211113924::1702171842::0::1::::<><>::res://NODES/Bala2.gd<>uid://tbx8a43svsm
+Hitbox.gd::GDScript::-1::1700943269::0::1::::Hitbox<>Area2D<>::
+hitbox.tscn::PackedScene::4891329031922340051::1700943269::0::1::::<><>::
+Hurtbox.gd::GDScript::-1::1702478739::0::1::::HurtBox<>Area2D<>::
+::res://SCRIPT/::1700943269
+GLOBAL.gd::GDScript::-1::1700943269::0::1::::<>Node<>::
+::res://SPRITES/::1700943269
+All_Fire_Bullet_Pixel_16x16_00.png::CompressedTexture2D::39326702206046644::1700943269::1700943269::1::::<><>::
+demon.png::CompressedTexture2D::620499653902361654::1700943269::1700943269::1::::<><>::
+ghost.png::CompressedTexture2D::3480087932638440582::1700943269::1700943269::1::::<><>::
+imp.png::CompressedTexture2D::637059745227654431::1700943269::1700943269::1::::<><>::
+NEGRO.png::CompressedTexture2D::8510111116292891054::1700943269::1700943269::1::::<><>::
+Ninja_PN.png::CompressedTexture2D::1054171508977564665::1700943269::1700943269::1::::<><>::
+Ninja_Style_2_P1.png::CompressedTexture2D::3482198414347644594::1700943269::1700943269::1::::<><>::
+Ninja_Style_2_P3.png::CompressedTexture2D::4633519611856709285::1700943269::1700943269::1::::<><>::
+Ninja_Style_3_PN.png::CompressedTexture2D::5030146856875992852::1700943269::1700943269::1::::<><>::
+soul.png::CompressedTexture2D::1569782934813068818::1700943269::1700943269::1::::<><>::
+zombie2.png::CompressedTexture2D::5608889378967480731::1700943269::1700943269::1::::<><>::
+zombie.png::CompressedTexture2D::7314836162791657330::1700943269::1700943269::1::::<><>::

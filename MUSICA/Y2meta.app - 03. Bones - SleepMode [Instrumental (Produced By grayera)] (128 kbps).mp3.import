@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://7q1souq0kca4"
+path="res://.godot/imported/Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3-59460beb309c6d4ba37dd0e195db2f38.mp3str"
+
+[deps]
+
+source_file="res://MUSICA/Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3"
+dest_files=["res://.godot/imported/Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3-59460beb309c6d4ba37dd0e195db2f38.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

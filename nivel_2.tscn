@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bcyp7nxjx0ejx"]
+
+[node name="Nivel_2" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -15978.0
+offset_top = -9061.0
+offset_right = 9305.0
+offset_bottom = 9563.0

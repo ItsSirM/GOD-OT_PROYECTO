@@ -5,7 +5,7 @@ var health = 20
 var player_chase = false
 @export var damage = 9
 @export var attackRate = 1.5
-@onready var player = get_node("/root/GAME/PLAYER")
+@onready var player = get_node("/root/Nivel_1/PLAYER")
 var targetPosition = 0
 
 func _physics_process(_delta):
