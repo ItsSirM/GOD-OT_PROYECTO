@@ -168,7 +168,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_k1sev")
 }],
-"loop": true,
+"loop": false,
 "name": &"DEATH",
 "speed": 8.0
 }, {
@@ -334,7 +334,9 @@ script = ExtResource("1_2nbpp")
 texture_filter = 1
 position = Vector2(0, -2.99999)
 sprite_frames = SubResource("SpriteFrames_jhal1")
-animation = &"QUIETO_ABAJO"
+animation = &"DEATH"
+frame = 6
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -4)

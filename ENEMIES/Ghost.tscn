@@ -1,35 +1,184 @@
-[gd_scene load_steps=9 format=3 uid="uid://gvybfol4xj6y"]
+[gd_scene load_steps=27 format=3 uid="uid://gvybfol4xj6y"]
 
 [ext_resource type="Script" path="res://ENEMIES/Ghost.gd" id="1_p73ts"]
-[ext_resource type="Texture2D" uid="uid://bpt1smaov4bec" path="res://SPRITES/ghost.png" id="2_uok1j"]
+[ext_resource type="Texture2D" uid="uid://bweatad6ps1bh" path="res://SPRITES/GhostSS.png" id="2_xmxmo"]
 [ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_qeao5"]
 [ext_resource type="Script" path="res://NODES/Hitbox.gd" id="4_6r308"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyyda"]
-size = Vector2(68, 98)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vc6v6"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(0, 0, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gcdx"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(60, 0, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cp10"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(120, 0, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hy2s4"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(0, 104, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axslk"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(60, 104, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4vku"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(120, 104, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivxvr"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(0, 208, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfqi2"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(60, 208, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mb2r"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(120, 208, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1k0y"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(180, 208, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05nce"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(240, 208, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0l4t"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(0, 156, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ryuu"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(60, 156, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3j6ed"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(120, 156, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qo6n"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(0, 52, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aole0"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(60, 52, 60, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5kx7"]
+atlas = ExtResource("2_xmxmo")
+region = Rect2(120, 52, 60, 52)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ohfcf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vc6v6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gcdx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cp10")
+}],
+"loop": true,
+"name": &"ABAJO",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hy2s4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_axslk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4vku")
+}],
+"loop": true,
+"name": &"ARRIBA",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ivxvr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfqi2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mb2r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1k0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05nce")
+}],
+"loop": false,
+"name": &"DEATH",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0l4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ryuu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3j6ed")
+}],
+"loop": true,
+"name": &"DERECHA",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qo6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aole0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5kx7")
+}],
+"loop": true,
+"name": &"IZQUIERDA",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_we2d3"]
+radius = 23.0
+height = 58.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xcyr6"]
-radius = 474.105
+radius = 169.047
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g22m3"]
-radius = 49.0
-height = 182.0
+radius = 23.0
+height = 58.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y0oj2"]
-radius = 47.0
-height = 178.0
+radius = 23.0
+height = 58.0
 
 [node name="Ghost" type="CharacterBody2D"]
+scale = Vector2(1.75, 1.75)
 script = ExtResource("1_p73ts")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-scale = Vector2(3, 3)
-texture = ExtResource("2_uok1j")
+sprite_frames = SubResource("SpriteFrames_ohfcf")
+animation = &"ABAJO"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3, 39)
-shape = SubResource("RectangleShape2D_gyyda")
+position = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_we2d3")
 debug_color = Color(0, 0.6, 0.701961, 0.164706)
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -42,6 +191,7 @@ debug_color = Color(0.556863, 0.560784, 0, 0.196078)
 script = ExtResource("3_qeao5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_g22m3")
 debug_color = Color(0.85098, 0, 0.164706, 0.152941)
 
@@ -49,6 +199,7 @@ debug_color = Color(0.85098, 0, 0.164706, 0.152941)
 script = ExtResource("4_6r308")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(1, 1)
 shape = SubResource("CapsuleShape2D_y0oj2")
 debug_color = Color(0.0196078, 0.65098, 0, 0.180392)
 

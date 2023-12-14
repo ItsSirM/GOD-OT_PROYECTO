@@ -15,7 +15,15 @@ func _physics_process(delta):
 func shoot():
 	var b = bullet.instantiate()
 	b.global_position = global_position
-	b.direction = b.global_position.direction_to(player.global_position)
+	b.direction = b.global_position.direction_to(player.global_position).normalized()
+	if b.direction.x > 0:
+		anim.play("DERECHA")
+	elif b.direction.x < 0:
+		anim.play("IZQUIERDA")
+	elif b.direction.y > 0:
+		anim.play("ABAJO")
+	elif b.direction.y < 0:
+		anim.play("ARRIBA")
 	get_parent().add_child(b)
 	
 func _on_area_2d_body_entered(body):

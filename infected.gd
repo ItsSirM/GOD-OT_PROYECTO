@@ -8,8 +8,6 @@ func _init():
 	damage = 9
 	attackRate = 1.5
 
-
-
 func damaged(damage_taken: int):
 	health -= damage_taken
 	if health <= 0:

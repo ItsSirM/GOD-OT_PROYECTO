@@ -1,11 +1,11 @@
-Panel
 AnimatedSprite2D
-Timer
 CollisionShape2D
+AmmoArea
+Panel
+Timer
 Area2D
 Hitbox
 Projectile
-AmmoArea
 HurtBox
 Sprite2D
 CharacterBody2D

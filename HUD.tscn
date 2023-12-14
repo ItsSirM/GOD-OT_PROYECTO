@@ -1,6 +1,5 @@
-[gd_scene load_steps=18 format=3 uid="uid://dnicmc5msc2hs"]
+[gd_scene load_steps=16 format=3 uid="uid://dnicmc5msc2hs"]
 
-[ext_resource type="Texture2D" uid="uid://b4qutc6v7at1t" path="res://SPRITES/VisionBlock.png" id="1_hov7t"]
 [ext_resource type="StyleBox" uid="uid://bwjro61abkgdg" path="res://STYLES/WGRAD1.tres" id="1_p1ks0"]
 [ext_resource type="Texture2D" uid="uid://ru4kqwwc8kd7" path="res://HUDicons/Wicon1.png" id="2_a4ggb"]
 [ext_resource type="Texture2D" uid="uid://nt8prkgcpmcx" path="res://HUDicons/WGrad2.png" id="3_2mtgw"]
@@ -8,9 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://6r1vwqk8482u" path="res://HUDicons/Wicon2.png" id="4_6sn7g"]
 [ext_resource type="Texture2D" uid="uid://df17bioebcila" path="res://HUDicons/Wicon3.png" id="5_c1anp"]
 [ext_resource type="Texture2D" uid="uid://drlv0iirn2w8j" path="res://HUDicons/Wicon4.png" id="6_32gkt"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b20y3"]
-texture = ExtResource("1_hov7t")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hxkei"]
 bg_color = Color(0, 0, 0, 1)
@@ -47,11 +43,6 @@ texture = ExtResource("3_2mtgw")
 texture = ExtResource("6_32gkt")
 
 [node name="HUD" type="CanvasLayer"]
-
-[node name="Panel3" type="Panel" parent="."]
-offset_right = 1150.0
-offset_bottom = 647.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_b20y3")
 
 [node name="Panel" type="Panel" parent="."]
 anchors_preset = 7
