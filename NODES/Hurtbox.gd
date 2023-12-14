@@ -24,7 +24,7 @@ func _on_area_entered(hitbox: Hitbox):
 		else:
 			owner.player_damaged(damage)
 	
-	if owner is Enemy && hitbox.owner is Bala2  || hitbox.owner is Rocket:
+	if owner is Enemy && hitbox.owner is Bala2  || owner is Enemy && hitbox.owner is Rocket:
 		owner.damaged(hitbox.damage)
 		
 func _on_timeout():

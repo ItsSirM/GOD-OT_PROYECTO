@@ -1,10 +1,11 @@
+Panel
+AnimatedSprite2D
 Timer
 CollisionShape2D
 Area2D
 Hitbox
 Projectile
 AmmoArea
-Panel
 HurtBox
 Sprite2D
 CharacterBody2D
@@ -15,7 +16,6 @@ Label
 CanvasLayer
 Control
 SubViewport
-AnimatedSprite2D
 StaticBody2D
 TileMap
 TextureRect

@@ -75,7 +75,6 @@ layer_0/tile_data = PackedInt32Array(2883524, 1, 0, 2359236, 1, 0, 1834948, 1, 0
 [node name="PLAYER" parent="." instance=ExtResource("3_dxy11")]
 process_mode = 1
 position = Vector2(-2, 305)
-up_direction = Vector2(-0.382852, -0.92381)
 
 [node name="PAREDES" type="StaticBody2D" parent="."]
 
@@ -120,6 +119,5 @@ position = Vector2(-314, -932)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_gb8it")
 volume_db = 0.125
-autoplay = true
 
 [connection signal="pressed" from="PauseMenu/VBoxContainer/SALIR" to="." method="_on_salir_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=88 format=3 uid="uid://djtxlotr6up84"]
+[gd_scene load_steps=93 format=3 uid="uid://djtxlotr6up84"]
 
 [ext_resource type="Texture2D" uid="uid://k4buyti86t6e" path="res://BACKGROUND/FONDONEGRO.png" id="1_iovi2"]
 [ext_resource type="Texture2D" uid="uid://b15se6yanwjsl" path="res://BACKGROUND/Asset 1.png" id="1_l4f3h"]
@@ -28,6 +28,11 @@
 [ext_resource type="Texture2D" uid="uid://bdcgvtfpajuy8" path="res://BACKGROUND/mainlevbuild.png" id="16_056wh"]
 [ext_resource type="Texture2D" uid="uid://dsmc5j3l3p67q" path="res://BACKGROUND/mainlevbuild (1).png" id="17_bor4b"]
 [ext_resource type="Texture2D" uid="uid://bqio4p3qiy40u" path="res://BACKGROUND/mainlevbuild (2).png" id="18_ophff"]
+[ext_resource type="PackedScene" uid="uid://dw7yi7y8i2qyc" path="res://ENEMIES/HlvlCyberGuard.tscn" id="29_df7wk"]
+[ext_resource type="PackedScene" uid="uid://bq0i0dy6w7jot" path="res://ENEMIES/Hellhound.tscn" id="30_ws8sc"]
+[ext_resource type="PackedScene" uid="uid://b0ounxcvoxg7c" path="res://ENEMIES/CyberGuard.tscn" id="31_w7uev"]
+[ext_resource type="PackedScene" uid="uid://qpr1cpuq3hhg" path="res://ENEMIES/Deformer.tscn" id="32_6nacq"]
+[ext_resource type="PackedScene" uid="uid://gvybfol4xj6y" path="res://ENEMIES/Ghost.tscn" id="33_4asy7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ceums"]
 texture = ExtResource("1_l4f3h")
@@ -11494,7 +11499,7 @@ position = Vector2(406, 219)
 up_direction = Vector2(-0.382852, -0.92381)
 
 [node name="Infected" parent="." instance=ExtResource("6_hwfnt")]
-position = Vector2(-485, 940)
+position = Vector2(-92, 1084)
 
 [node name="HUD" parent="." instance=ExtResource("7_ksn6c")]
 
@@ -11759,3 +11764,87 @@ shape = SubResource("RectangleShape2D_rfipe")
 stream = ExtResource("14_adglr")
 volume_db = -1.235
 autoplay = true
+
+[node name="Infected2" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(24, 456)
+
+[node name="Infected3" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(874, 1061)
+
+[node name="HlvlCyberGuard" parent="." instance=ExtResource("29_df7wk")]
+position = Vector2(-1858, 7710)
+
+[node name="Hellhound" parent="." instance=ExtResource("30_ws8sc")]
+position = Vector2(-1889, 6402)
+
+[node name="CyberGuard" parent="." instance=ExtResource("31_w7uev")]
+position = Vector2(-1923, 6060)
+
+[node name="CyberGuard2" parent="." instance=ExtResource("31_w7uev")]
+position = Vector2(-1559, 5700)
+
+[node name="Deformer" parent="." instance=ExtResource("32_6nacq")]
+position = Vector2(2806, 5965)
+
+[node name="Ghost" parent="." instance=ExtResource("33_4asy7")]
+position = Vector2(3155, 2775)
+
+[node name="Ghost2" parent="." instance=ExtResource("33_4asy7")]
+position = Vector2(3153, 3225)
+
+[node name="CyberGuard3" parent="." instance=ExtResource("31_w7uev")]
+position = Vector2(-13, 2992)
+
+[node name="CyberGuard4" parent="." instance=ExtResource("31_w7uev")]
+position = Vector2(937, 2984)
+
+[node name="Hellhound2" parent="." instance=ExtResource("30_ws8sc")]
+position = Vector2(-4292, 2871)
+
+[node name="CyberGuard5" parent="." instance=ExtResource("31_w7uev")]
+position = Vector2(-3514, 2442)
+
+[node name="CyberGuard6" parent="." instance=ExtResource("31_w7uev")]
+position = Vector2(-3994, 3339)
+
+[node name="Infected4" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(591, 3092)
+
+[node name="Infected5" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(19, 2780)
+
+[node name="Infected6" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(1861, 2981)
+
+[node name="Infected7" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(-2125, 2666)
+
+[node name="Infected8" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(-1621, 3412)
+
+[node name="Infected9" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(-1828, 2944)
+
+[node name="Infected10" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(-1561, 2815)
+
+[node name="CyberGuard7" parent="." instance=ExtResource("31_w7uev")]
+position = Vector2(-2565, 3179)
+
+[node name="Infected11" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(-3400, 3275)
+
+[node name="Infected12" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(-4022, 2557)
+
+[node name="Hellhound3" parent="." instance=ExtResource("30_ws8sc")]
+position = Vector2(455, 4736)
+
+[node name="CyberGuard8" parent="." instance=ExtResource("31_w7uev")]
+position = Vector2(689, 4790)
+
+[node name="Infected13" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(44, 4528)
+
+[node name="Infected14" parent="." instance=ExtResource("6_hwfnt")]
+position = Vector2(898, 4239)

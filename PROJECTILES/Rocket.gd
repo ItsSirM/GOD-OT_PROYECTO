@@ -6,7 +6,7 @@ extends Projectile
 func _init():
 	speed = 2000
 	life = 1.2
-	damage = 120
+	damage = 99
 	
 func _on_impact(body: Node):
 	if !body is Player:

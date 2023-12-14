@@ -9,7 +9,7 @@ func _ready():
 	jugador = get_node("PLAYER")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("Pausa"):
 		get_tree().paused = not get_tree().paused
 		$PauseMenu.visible = not $PauseMenu.visible
