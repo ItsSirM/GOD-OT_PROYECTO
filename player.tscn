@@ -322,8 +322,8 @@ radius = 18.0
 height = 60.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ke6c4"]
-radius = 18.0
-height = 60.0
+radius = 19.0
+height = 61.7143
 
 [node name="PLAYER" type="CharacterBody2D"]
 scale = Vector2(1.75, 1.75)

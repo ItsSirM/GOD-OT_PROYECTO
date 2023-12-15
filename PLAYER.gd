@@ -8,6 +8,10 @@ var weapon = "PISTOL"
 var ammo = 50
 var rng = RandomNumberGenerator.new()
 
+var shotgun = false
+var chaingun = false
+var launcher = false
+
 var reload = 0
 var canReload = false
 var reloadZone : AmmoArea
@@ -64,7 +68,7 @@ func _physics_process(delta):
 		get_parent().get_node("HUD/Weapon2").add_theme_stylebox_override("panel", wgrad2)
 		get_parent().get_node("HUD/Weapon3").add_theme_stylebox_override("panel", wgrad2)
 		get_parent().get_node("HUD/Weapon4").add_theme_stylebox_override("panel", wgrad2)
-	elif Input.is_action_just_pressed("Weapon2"):
+	elif Input.is_action_just_pressed("Weapon2") && shotgun == true:
 		weapon = "SHOTGUN"
 		fire_rate = 1.25
 		bullet = preload("res://PROJECTILES/Bala2.tscn")
@@ -72,7 +76,7 @@ func _physics_process(delta):
 		get_parent().get_node("HUD/Weapon2").add_theme_stylebox_override("panel", wgrad1)
 		get_parent().get_node("HUD/Weapon3").add_theme_stylebox_override("panel", wgrad2)
 		get_parent().get_node("HUD/Weapon4").add_theme_stylebox_override("panel", wgrad2)
-	elif Input.is_action_just_pressed("Weapon3"):
+	elif Input.is_action_just_pressed("Weapon3") && chaingun == true:
 		weapon = "CHAINGUN"
 		fire_rate = 0.1
 		bullet = preload("res://PROJECTILES/Bala2.tscn")
@@ -80,7 +84,7 @@ func _physics_process(delta):
 		get_parent().get_node("HUD/Weapon2").add_theme_stylebox_override("panel", wgrad2)
 		get_parent().get_node("HUD/Weapon3").add_theme_stylebox_override("panel", wgrad1)
 		get_parent().get_node("HUD/Weapon4").add_theme_stylebox_override("panel", wgrad2)
-	elif Input.is_action_just_pressed("Weapon4"):
+	elif Input.is_action_just_pressed("Weapon4") && launcher == true:
 		weapon = "ROCKET"
 		fire_rate = 1.75
 		bullet = preload("res://PROJECTILES/Bala2.tscn")

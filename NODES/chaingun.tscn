@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwnu288egnewl"]
+
+[ext_resource type="Texture2D" uid="uid://ww8emhxu3mh5" path="res://SPRITES/Chaingun.png" id="1_jxtqf"]
+[ext_resource type="Script" path="res://NODES/collect.gd" id="2_t2ih2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3exby"]
+size = Vector2(45.3333, 16)
+
+[node name="chaingun" type="Node2D"]
+scale = Vector2(3, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_jxtqf")
+
+[node name="collect" type="Area2D" parent="."]
+script = ExtResource("2_t2ih2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collect"]
+position = Vector2(0.333334, 0)
+shape = SubResource("RectangleShape2D_3exby")

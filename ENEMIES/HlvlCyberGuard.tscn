@@ -1,8 +1,9 @@
-[gd_scene load_steps=30 format=3 uid="uid://dw7yi7y8i2qyc"]
+[gd_scene load_steps=32 format=3 uid="uid://dw7yi7y8i2qyc"]
 
 [ext_resource type="Script" path="res://ENEMIES/HlvlCyberGuard.gd" id="1_jtfrm"]
 [ext_resource type="Texture2D" uid="uid://dgj8wi0bahyip" path="res://SPRITES/BaronOfHellSS.png" id="2_mcgld"]
 [ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_1o56t"]
+[ext_resource type="Script" path="res://NODES/AmmoArea.gd" id="4_0o0pw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hepm8"]
 atlas = ExtResource("2_mcgld")
@@ -173,7 +174,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m0spn")
 }],
-"loop": true,
+"loop": false,
 "name": &"DERECHA",
 "speed": 5.0
 }, {
@@ -209,6 +210,9 @@ radius = 272.029
 radius = 32.0
 height = 86.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74k0w"]
+size = Vector2(65.2, 34)
+
 [node name="HlvlCyberGuard" type="CharacterBody2D"]
 scale = Vector2(2.5, 2.5)
 script = ExtResource("1_jtfrm")
@@ -216,7 +220,9 @@ script = ExtResource("1_jtfrm")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_vy7qs")
-animation = &"ABAJO"
+animation = &"DEATH"
+frame = 5
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 1)
@@ -235,6 +241,14 @@ script = ExtResource("3_1o56t")
 position = Vector2(2, 1)
 shape = SubResource("CapsuleShape2D_tjgly")
 debug_color = Color(0.866667, 0, 0.12549, 0.121569)
+
+[node name="AmmoArea" type="Area2D" parent="."]
+script = ExtResource("4_0o0pw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AmmoArea"]
+position = Vector2(5.8, 23)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_74k0w")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -13,3 +13,12 @@ res://ENEMIES/Hellhound.tscn
 res://ENEMIES/HlvlCyberGuard.tscn
 res://ENEMIES/Shooter.gd
 res://infected.gd
+res://PLAYER.gd
+res://NODES/shotgun.tscn
+res://NODES/collect.gd
+res://NODES/chaingun.tscn
+res://NODES/launcher.tscn
+res://ENEMIES/Deformer.gd
+res://ENEMIES/Ghost.gd
+res://ENEMIES/Hellhound.gd
+res://ENEMIES/HlvlCyberGuard.gd

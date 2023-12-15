@@ -164,8 +164,8 @@ radius = 23.0
 height = 58.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y0oj2"]
-radius = 23.0
-height = 58.0
+radius = 24.1429
+height = 59.7143
 
 [node name="Ghost" type="CharacterBody2D"]
 scale = Vector2(1.75, 1.75)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://djtxlotr6up84"]
+[gd_scene load_steps=96 format=3 uid="uid://djtxlotr6up84"]
 
 [ext_resource type="Texture2D" uid="uid://k4buyti86t6e" path="res://BACKGROUND/FONDONEGRO.png" id="1_iovi2"]
 [ext_resource type="Texture2D" uid="uid://b15se6yanwjsl" path="res://BACKGROUND/Asset 1.png" id="1_l4f3h"]
@@ -33,6 +33,9 @@
 [ext_resource type="PackedScene" uid="uid://b0ounxcvoxg7c" path="res://ENEMIES/CyberGuard.tscn" id="31_w7uev"]
 [ext_resource type="PackedScene" uid="uid://qpr1cpuq3hhg" path="res://ENEMIES/Deformer.tscn" id="32_6nacq"]
 [ext_resource type="PackedScene" uid="uid://gvybfol4xj6y" path="res://ENEMIES/Ghost.tscn" id="33_4asy7"]
+[ext_resource type="PackedScene" uid="uid://hovht26hblb" path="res://NODES/shotgun.tscn" id="34_kip0j"]
+[ext_resource type="PackedScene" uid="uid://cnh8brl20nlmd" path="res://NODES/launcher.tscn" id="35_3qmlg"]
+[ext_resource type="PackedScene" uid="uid://cwnu288egnewl" path="res://NODES/chaingun.tscn" id="36_dm5hp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ceums"]
 texture = ExtResource("1_l4f3h")
@@ -11847,3 +11850,12 @@ position = Vector2(44, 4528)
 
 [node name="Infected14" parent="." instance=ExtResource("6_hwfnt")]
 position = Vector2(898, 4239)
+
+[node name="shotgun" parent="." instance=ExtResource("34_kip0j")]
+position = Vector2(-4018, 2919)
+
+[node name="chaingun" parent="." instance=ExtResource("36_dm5hp")]
+position = Vector2(3147, 2956)
+
+[node name="launcher" parent="." instance=ExtResource("35_3qmlg")]
+position = Vector2(2968, 5968)

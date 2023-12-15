@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://hovht26hblb"]
+
+[ext_resource type="Texture2D" uid="uid://dtnqii85x7drw" path="res://SPRITES/Shotgun.png" id="1_foqtc"]
+[ext_resource type="Script" path="res://NODES/collect.gd" id="2_lj8bv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ys5n7"]
+size = Vector2(44.6667, 14.3333)
+
+[node name="shotgun" type="Node2D"]
+scale = Vector2(3, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_foqtc")
+
+[node name="collect" type="Area2D" parent="."]
+script = ExtResource("2_lj8bv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collect"]
+position = Vector2(6.35783e-07, -0.5)
+shape = SubResource("RectangleShape2D_ys5n7")

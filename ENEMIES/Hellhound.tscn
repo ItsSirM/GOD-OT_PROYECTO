@@ -1,9 +1,10 @@
-[gd_scene load_steps=32 format=3 uid="uid://bq0i0dy6w7jot"]
+[gd_scene load_steps=34 format=3 uid="uid://bq0i0dy6w7jot"]
 
 [ext_resource type="Script" path="res://ENEMIES/Hellhound.gd" id="1_pa65i"]
 [ext_resource type="Texture2D" uid="uid://bl4skgjlcqhmt" path="res://SPRITES/demonSS.png" id="2_w45tg"]
 [ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_n4gm8"]
 [ext_resource type="Script" path="res://NODES/Hitbox.gd" id="4_uv6u8"]
+[ext_resource type="Script" path="res://NODES/AmmoArea.gd" id="5_5gl1g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xih8v"]
 atlas = ExtResource("2_w45tg")
@@ -199,8 +200,11 @@ radius = 26.0
 height = 66.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cl0mr"]
-radius = 26.0
-height = 66.0
+radius = 26.5676
+height = 67.1892
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rv8c2"]
+size = Vector2(64.4595, 33.5135)
 
 [node name="Hellhound" type="CharacterBody2D"]
 scale = Vector2(1.85, 1.85)
@@ -238,6 +242,14 @@ shape = SubResource("CapsuleShape2D_cl0mr")
 debug_color = Color(0, 0.639216, 0.356863, 0.180392)
 
 [node name="Timer" type="Timer" parent="Hitbox"]
+
+[node name="AmmoArea" type="Area2D" parent="."]
+script = ExtResource("5_5gl1g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AmmoArea"]
+position = Vector2(0.743246, 11.3513)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_rv8c2")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
