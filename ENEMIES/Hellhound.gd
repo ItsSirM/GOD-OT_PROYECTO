@@ -17,4 +17,5 @@ func damaged(damage_taken: int):
 		get_node("CollisionShape2D").set_deferred("disabled", true)
 		get_node("Area2D/CollisionShape2D").set_deferred("disabled", true)
 		get_node("HurtBox/CollisionShape2D").set_deferred("disabled", true)
+		get_node("Hitbox/CollisionShape2D").set_deferred("disabled", true)
 		get_node("AmmoArea/CollisionShape2D").set_deferred("disabled", false)

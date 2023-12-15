@@ -1,0 +1,6 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://bjncce1newtic"]
+
+[ext_resource type="Texture2D" uid="uid://df17bioebcila" path="res://HUDicons/Wicon3.png" id="1_2u6vs"]
+
+[resource]
+texture = ExtResource("1_2u6vs")

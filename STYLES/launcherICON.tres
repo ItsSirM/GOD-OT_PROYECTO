@@ -1,0 +1,6 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://wlwcjqq5cvhs"]
+
+[ext_resource type="Texture2D" uid="uid://drlv0iirn2w8j" path="res://HUDicons/Wicon4.png" id="1_vidcp"]
+
+[resource]
+texture = ExtResource("1_vidcp")

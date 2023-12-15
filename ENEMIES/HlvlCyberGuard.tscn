@@ -220,9 +220,7 @@ script = ExtResource("1_jtfrm")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_vy7qs")
-animation = &"DEATH"
-frame = 5
-frame_progress = 1.0
+animation = &"ARRIBA"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 1)
@@ -247,8 +245,8 @@ script = ExtResource("4_0o0pw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AmmoArea"]
 position = Vector2(5.8, 23)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_74k0w")
+disabled = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

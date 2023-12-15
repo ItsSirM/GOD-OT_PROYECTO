@@ -1,3 +1,4 @@
+Label
 CollisionShape2D
 AmmoArea
 collect
@@ -13,7 +14,6 @@ CharacterBody2D
 Enemy
 AudioStreamPlayer
 Node2D
-Label
 CanvasLayer
 Control
 SubViewport
