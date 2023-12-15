@@ -336,9 +336,7 @@ script = ExtResource("1_2nbpp")
 texture_filter = 1
 position = Vector2(0, -2.99999)
 sprite_frames = SubResource("SpriteFrames_jhal1")
-animation = &"DEATH"
-frame = 6
-frame_progress = 1.0
+animation = &"MOVERSE_ABAJO"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -4)

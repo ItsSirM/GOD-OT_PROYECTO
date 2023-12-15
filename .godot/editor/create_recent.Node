@@ -1,8 +1,4 @@
-TextureRect
-AudioStreamPlayer2D
-Button
 Label
-CanvasLayer
 CollisionShape2D
 AmmoArea
 collect
@@ -18,10 +14,12 @@ CharacterBody2D
 Enemy
 AudioStreamPlayer
 Node2D
+CanvasLayer
 Control
 SubViewport
 StaticBody2D
 TileMap
+TextureRect
 Marker2D
 RigidBody2D
 Camera2D
