@@ -1,3 +1,13 @@
 res://ENEMIES/ganar.tscn
-res://NODES/Hurtbox.gd
 res://STYLES/WGRAD1.tres
+res://NODES/Hurtbox.gd
+res://player.tscn
+res://nivel_1.tscn
+res://HUD.tscn
+res://ENEMIES/HlvlCyberGuard.tscn
+res://ENEMIES/Deformer.tscn
+res://PROJECTILES/BalaCG.tscn
+res://PROJECTILES/BalaDF.tscn
+res://PROJECTILES/BalaR.tscn
+res://gameover.tscn
+res://menu.tscn
