@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702602515
+::res://::1702602907
 BALA.gd::GDScript::-1::1702600293::0::1::::<>Area2D<>::
 BALA.tscn::PackedScene::4821636177365555330::1702600293::0::1::::<><>::uid://tbx8a43svsm
 ENEMIGO1.gd::GDScript::-1::1702600293::0::1::::<>CharacterBody2D<>::
@@ -9,21 +9,21 @@ ENEMIGO_2.gd::GDScript::-1::1702600293::0::1::::<>RigidBody2D<>::
 enemy.tscn::PackedScene::7788811798671550706::1702600293::0::1::::<><>::res://PLAYER.gd<>uid://pawbywe8joon
 game.tscn::PackedScene::1841516560049806702::1702600293::0::1::::<><>::uid://dtimj0qenksre
 gameover.gd::GDScript::-1::1702601224::0::1::::<>CanvasLayer<>::
-gameover.tscn::PackedScene::7582891742376128230::1702602515::0::1::::<><>::res://gameover.gd<>uid://c4k4dfkhbk7uq::::res://BACKGROUND/IMAGENDED.png<>uid://coa1xqnwj0aye::::res://MUSICA/y2mate.com - Cod zombies  evil laugh.mp3
-HUD.tscn::PackedScene::8088375055878816028::1702601228::0::1::::<><>::uid://bwjro61abkgdg::::res://STYLES/WGRAD1.tres<>uid://ru4kqwwc8kd7::::res://HUDicons/Wicon1.png<>uid://nt8prkgcpmcx::::res://HUDicons/WGrad2.png<>uid://chn5yksv7cu6t::::res://STYLES/WGRAD2.tres<>uid://6r1vwqk8482u::::res://HUDicons/Wicon2.png<>uid://df17bioebcila::::res://HUDicons/Wicon3.png<>uid://drlv0iirn2w8j::::res://HUDicons/Wicon4.png
+gameover.tscn::PackedScene::7582891742376128230::1702602770::0::1::::<><>::res://gameover.gd<>uid://c4k4dfkhbk7uq::::res://BACKGROUND/IMAGENDED.png<>uid://coa1xqnwj0aye::::res://MUSICA/y2mate.com - Cod zombies  evil laugh.mp3
+HUD.tscn::PackedScene::8088375055878816028::1702602770::0::1::::<><>::uid://bwjro61abkgdg::::res://STYLES/WGRAD1.tres<>uid://ru4kqwwc8kd7::::res://HUDicons/Wicon1.png<>uid://nt8prkgcpmcx::::res://HUDicons/WGrad2.png<>uid://chn5yksv7cu6t::::res://STYLES/WGRAD2.tres<>uid://6r1vwqk8482u::::res://HUDicons/Wicon2.png<>uid://df17bioebcila::::res://HUDicons/Wicon3.png<>uid://drlv0iirn2w8j::::res://HUDicons/Wicon4.png
 infected.gd::GDScript::-1::1702600293::0::1::::Infected<>Enemy<>::
 infected.tscn::PackedScene::6253044376880502836::1702600293::0::1::::<><>::res://infected.gd<>uid://c8qhuf1v5krvm
 menu.gd::GDScript::-1::1702601558::0::1::::<>Control<>::
-menu.tscn::PackedScene::2722055778375318654::1702602390::0::1::::<><>::res://menu.gd<>uid://k4buyti86t6e::::res://BACKGROUND/FONDONEGRO.png
+menu.tscn::PackedScene::2722055778375318654::1702602770::0::1::::<><>::res://menu.gd<>uid://k4buyti86t6e::::res://BACKGROUND/FONDONEGRO.png
 NIVEL1.gd::GDScript::-1::1702600293::0::1::::<>Node2D<>::
 NIVEL1.tscn::PackedScene::1841516560049806702::1702600293::0::1::::<><>::res://NIVEL1.gd<>uid://dtimj0qenksre
-nivel_1.tscn::PackedScene::7831601721208132011::1702602395::0::1::::<><>::uid://k4buyti86t6e::::res://BACKGROUND/FONDONEGRO.png<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://mofy5dad3taj::::res://BACKGROUND/Texture/TX Tileset Grass.png<>uid://dxk30utr8c40t::::res://BACKGROUND/TX Props XZ.png<>uid://bvog2trqqrrf2::::res://BACKGROUND/decorative_props.png<>uid://d1757awn4teu0::::res://BACKGROUND/Texture/TX Plant.png<>uid://cgxo7dynsp7fx::::res://BACKGROUND/Texture/TX Shadow Plant.png<>uid://dav23i7xphcl0::::res://BACKGROUND/INTERIORES XLL.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://oj1ebiqfbs2a::::res://BACKGROUND/main_houses.png<>uid://c1l4rhobefy6::::res://BACKGROUND/Texture/TX Struct.png<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://m56cxmvdy77v::::res://BACKGROUND/Texture/TX Tileset Stone Ground.png<>uid://ceoc88fv80dte::::res://BACKGROUND/Texture/TX Props.png<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://c3i6s4jl0wok1::::res://BACKGROUND/main_houses (1).png<>uid://dkpnsdsnkhhim::::res://BACKGROUND/main_houses (2).png<>uid://buq8u1yt8jjg4::::res://BACKGROUND/TX PlantXL.png<>uid://xht3iknycwyu::::res://BACKGROUND/furniture (1).png<>uid://dmkhwnkqhyq5y::::res://BACKGROUND/furniture (3).png<>uid://ixacu1wwyy7k::::res://BACKGROUND/TX ShadowPlant XL.png<>uid://bdxk50okypkkp::::res://BACKGROUND/interiors (1).png<>uid://cyqegqqdetnsd::::res://BACKGROUND/decorative.png<>uid://7q1souq0kca4::::res://MUSICA/Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3<>uid://c80iocytjm0wq::::res://BACKGROUND/TX Struct XL.png<>uid://bdcgvtfpajuy8::::res://BACKGROUND/mainlevbuild.png<>uid://dsmc5j3l3p67q::::res://BACKGROUND/mainlevbuild (1).png<>uid://bqio4p3qiy40u::::res://BACKGROUND/mainlevbuild (2).png<>uid://bf1k21li0ps32::::res://MUSICA/y2mate.com - Cave 2  Ambience  Sound Effect.mp3<>uid://dw7yi7y8i2qyc::::res://ENEMIES/HlvlCyberGuard.tscn<>uid://bgv5fkqrfpme7::::res://MUSICA/a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3<>uid://bq0i0dy6w7jot::::res://ENEMIES/Hellhound.tscn<>uid://b0ounxcvoxg7c::::res://ENEMIES/CyberGuard.tscn<>uid://qpr1cpuq3hhg::::res://ENEMIES/Deformer.tscn<>uid://gvybfol4xj6y::::res://ENEMIES/Ghost.tscn<>uid://hovht26hblb::::res://NODES/shotgun.tscn<>uid://cnh8brl20nlmd::::res://NODES/launcher.tscn<>uid://cwnu288egnewl::::res://NODES/chaingun.tscn
+nivel_1.tscn::PackedScene::7831601721208132011::1702602770::0::1::::<><>::uid://k4buyti86t6e::::res://BACKGROUND/FONDONEGRO.png<>uid://b15se6yanwjsl::::res://BACKGROUND/Asset 1.png<>uid://mofy5dad3taj::::res://BACKGROUND/Texture/TX Tileset Grass.png<>uid://dxk30utr8c40t::::res://BACKGROUND/TX Props XZ.png<>uid://bvog2trqqrrf2::::res://BACKGROUND/decorative_props.png<>uid://d1757awn4teu0::::res://BACKGROUND/Texture/TX Plant.png<>uid://cgxo7dynsp7fx::::res://BACKGROUND/Texture/TX Shadow Plant.png<>uid://dav23i7xphcl0::::res://BACKGROUND/INTERIORES XLL.png<>uid://cpdaaualfeimx::::res://player.tscn<>uid://oj1ebiqfbs2a::::res://BACKGROUND/main_houses.png<>uid://c1l4rhobefy6::::res://BACKGROUND/Texture/TX Struct.png<>uid://cvdayy1bgyhvo::::res://infected.tscn<>uid://m56cxmvdy77v::::res://BACKGROUND/Texture/TX Tileset Stone Ground.png<>uid://ceoc88fv80dte::::res://BACKGROUND/Texture/TX Props.png<>uid://dnicmc5msc2hs::::res://HUD.tscn<>uid://c3i6s4jl0wok1::::res://BACKGROUND/main_houses (1).png<>uid://dkpnsdsnkhhim::::res://BACKGROUND/main_houses (2).png<>uid://buq8u1yt8jjg4::::res://BACKGROUND/TX PlantXL.png<>uid://xht3iknycwyu::::res://BACKGROUND/furniture (1).png<>uid://dmkhwnkqhyq5y::::res://BACKGROUND/furniture (3).png<>uid://ixacu1wwyy7k::::res://BACKGROUND/TX ShadowPlant XL.png<>uid://bdxk50okypkkp::::res://BACKGROUND/interiors (1).png<>uid://cyqegqqdetnsd::::res://BACKGROUND/decorative.png<>uid://7q1souq0kca4::::res://MUSICA/Y2meta.app - 03. Bones - SleepMode [Instrumental (Produced By grayera)] (128 kbps).mp3<>uid://c80iocytjm0wq::::res://BACKGROUND/TX Struct XL.png<>uid://bdcgvtfpajuy8::::res://BACKGROUND/mainlevbuild.png<>uid://dsmc5j3l3p67q::::res://BACKGROUND/mainlevbuild (1).png<>uid://bqio4p3qiy40u::::res://BACKGROUND/mainlevbuild (2).png<>uid://bf1k21li0ps32::::res://MUSICA/y2mate.com - Cave 2  Ambience  Sound Effect.mp3<>uid://dw7yi7y8i2qyc::::res://ENEMIES/HlvlCyberGuard.tscn<>uid://bgv5fkqrfpme7::::res://MUSICA/a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3<>uid://bq0i0dy6w7jot::::res://ENEMIES/Hellhound.tscn<>uid://b0ounxcvoxg7c::::res://ENEMIES/CyberGuard.tscn<>uid://qpr1cpuq3hhg::::res://ENEMIES/Deformer.tscn<>uid://gvybfol4xj6y::::res://ENEMIES/Ghost.tscn<>uid://hovht26hblb::::res://NODES/shotgun.tscn<>uid://cnh8brl20nlmd::::res://NODES/launcher.tscn<>uid://cwnu288egnewl::::res://NODES/chaingun.tscn
 nivel_2.tscn::PackedScene::2577312056137749617::1702600293::0::1::::<><>::
 personajes.tscn::PackedScene::4746558821491312737::1702600293::0::1::::<><>::res://PLAYER1.gd<>uid://b7arnkbq7s50l
 PLAYER1.gd::GDScript::-1::1702600293::0::1::::<>CharacterBody2D<>::
 PLAYER.gd::GDScript::-1::1702602119::0::1::::Player<>CharacterBody2D<>::
-player.tscn::PackedScene::5831868206192508319::1702601566::0::1::::<><>::res://PLAYER.gd<>uid://b2f418mr3yd2q::::res://SPRITES/PlayerSS.png<>res://NODES/Hurtbox.gd<>uid://cl23ie7d1f76h::::res://MUSICA/Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3<>uid://5cmoxbo0ulmq::::res://MUSICA/y2mate.com -  Sonidos de Escopeta  Efecto de Sonido HD.mp3
-::res://BACKGROUND/::1702602591
+player.tscn::PackedScene::5831868206192508319::1702602767::0::1::::<><>::res://PLAYER.gd<>uid://b2f418mr3yd2q::::res://SPRITES/PlayerSS.png<>res://NODES/Hurtbox.gd<>uid://cl23ie7d1f76h::::res://MUSICA/Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3<>uid://5cmoxbo0ulmq::::res://MUSICA/y2mate.com -  Sonidos de Escopeta  Efecto de Sonido HD.mp3
+::res://BACKGROUND/::1702602907
 Asset 1.png::CompressedTexture2D::4274363665266560787::1702600293::1702600293::1::::<><>::
 decorative.png::CompressedTexture2D::6490658106731317971::1702600293::1702600293::1::::<><>::
 decorative_props.png::CompressedTexture2D::3889701231995012945::1702600293::1702600293::1::::<><>::
@@ -46,6 +46,7 @@ TX Props XLL.png::CompressedTexture2D::2994400570569945016::1702600293::17026002
 TX Props XZ.png::CompressedTexture2D::8795995033574630233::1702600293::1702600293::1::::<><>::
 TX ShadowPlant XL.png::CompressedTexture2D::608996100697312266::1702600293::1702600293::1::::<><>::
 TX Struct XL.png::CompressedTexture2D::7141193531347373104::1702600293::1702600293::1::::<><>::
+WhatsApp Image 2023-12-14 at 7.14.29 PM.jpeg::CompressedTexture2D::1023681782316936875::1702602902::1702602908::1::::<><>::
 ::res://BACKGROUND/Texture/::1702600293
 TX Plant.png::CompressedTexture2D::9052110763601872089::1702600293::1702600293::1::::<><>::
 TX Player.png::CompressedTexture2D::7615268463577002133::1702600293::1702600293::1::::<><>::
@@ -56,20 +57,20 @@ TX Struct.png::CompressedTexture2D::194772088173471507::1702600293::1702600293::
 TX Tileset Grass.png::CompressedTexture2D::871515436570824357::1702600293::1702600293::1::::<><>::
 TX Tileset Stone Ground.png::CompressedTexture2D::906084482175592677::1702600293::1702600293::1::::<><>::
 TX Tileset Wall.png::CompressedTexture2D::1884264313686545249::1702600293::1702600293::1::::<><>::
-::res://ENEMIES/::1702601228
+::res://ENEMIES/::1702602907
 CyberGuard.gd::GDScript::-1::1702600293::0::1::::CyberGuard<>Shooter<>::
 CyberGuard.tscn::PackedScene::4171281830477267218::1702600293::0::1::::<><>::res://ENEMIES/CyberGuard.gd<>uid://dq2sln27wx1ch
 Deformer.gd::GDScript::-1::1702600293::0::1::::Deformer<>Shooter<>::
 Deformer.tscn::PackedScene::1155065913187937200::1702600293::0::1::::<><>::res://ENEMIES/Deformer.gd<>uid://dpfck2qv6erym
 Enemy.gd::GDScript::-1::1702600293::0::1::::Enemy<>CharacterBody2D<>::
 ganar.gd::GDScript::-1::1702600882::0::1::::<>CanvasLayer<>::
-ganar.tscn::PackedScene::4928286748616737767::1702601228::0::1::::<><>::res://ENEMIES/ganar.gd
+ganar.tscn::PackedScene::4928286748616737767::1702602770::0::1::::<><>::res://ENEMIES/ganar.gd<>uid://cpd43haunhihn::::res://BACKGROUND/IMG-20230822-WA0000.jpg
 Ghost.gd::GDScript::-1::1702600293::0::1::::Ghost<>Enemy<>::
 Ghost.tscn::PackedScene::465944273067221058::1702600293::0::1::::<><>::res://ENEMIES/Ghost.gd<>uid://bweatad6ps1bh
 Hellhound.gd::GDScript::-1::1702600293::0::1::::Hellhound<>Enemy<>::
 Hellhound.tscn::PackedScene::3561582202627390291::1702600293::0::1::::<><>::res://ENEMIES/Hellhound.gd<>uid://bl4skgjlcqhmt
-HlvlCyberGuard.gd::GDScript::-1::1702601022::0::1::::HighCyberGuard<>Shooter<>::
-HlvlCyberGuard.tscn::PackedScene::8770949912757213546::1702600293::0::1::::<><>::res://ENEMIES/HlvlCyberGuard.gd<>uid://dgj8wi0bahyip
+HlvlCyberGuard.gd::GDScript::-1::1702602767::0::1::::HighCyberGuard<>Shooter<>::
+HlvlCyberGuard.tscn::PackedScene::8770949912757213546::1702602770::0::1::::<><>::res://ENEMIES/HlvlCyberGuard.gd<>uid://dgj8wi0bahyip::::res://SPRITES/BaronOfHellSS.png<>res://NODES/Hurtbox.gd<>res://NODES/AmmoArea.gd
 Rogue.gd::GDScript::-1::1702600293::0::1::::Rogue<>Shooter<>::
 Rogue.tscn::PackedScene::1327477765277638600::1702600293::0::1::::<><>::res://ENEMIES/Rogue.gd<>uid://cl58uaoo3yq2f
 Shooter.gd::GDScript::-1::1702600293::0::1::::Shooter<>Enemy<>::

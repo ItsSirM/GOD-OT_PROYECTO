@@ -11,3 +11,4 @@ res://HUD.tscn
 res://gameover.tscn
 res://menu.tscn
 res://menu.gd
+res://ENEMIES/HlvlCyberGuard.tscn
