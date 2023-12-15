@@ -19,6 +19,8 @@ var reloadZone : AmmoArea
 # Añade una referencia a tu nodo de bala aquí
 @onready var bullet = preload("res://PROJECTILES/Bala2.tscn")
 @onready var rocket = preload("res://PROJECTILES/Rocket.tscn")
+@onready var pistola = $PISTOLA
+@onready var escopeta = $ESCOPETA
 
 var wgrad1 = preload("res://STYLES/WGRAD1.tres")
 var wgrad2 = preload("res://STYLES/WGRAD2.tres")
@@ -99,6 +101,7 @@ func _physics_process(delta):
 		if weapon == "PISTOL":
 			if Input.is_action_just_pressed("DISPARA") and time_since_last_shot >= fire_rate:
 				shoot()
+				pistola.play()
 				time_since_last_shot = 0.0
 				ammo -= 1
 				get_parent().get_node("HUD/Panel2/AmmoText").text = str(ammo)
@@ -107,6 +110,7 @@ func _physics_process(delta):
 				var cont = 0
 				while cont < 7:
 					shoot()
+					escopeta.play()
 					cont += 1
 				time_since_last_shot = 0.0
 				ammo -= 4
@@ -115,6 +119,7 @@ func _physics_process(delta):
 		elif weapon == "CHAINGUN":
 			if Input.is_action_pressed("DISPARA") and time_since_last_shot >= fire_rate:
 				shoot()
+				pistola.play()
 				time_since_last_shot = 0.0
 				ammo -= 1
 				get_parent().get_node("HUD/Panel2/AmmoText").text = str(ammo)
@@ -169,3 +174,4 @@ func player_damaged(damage: int):
 	if health <= 0:
 		get_parent().get_node("HUD/Panel/HealthText").text = str(0)
 		self.queue_free()
+		get_tree().change_scene_to_file("res://gameover.tscn")

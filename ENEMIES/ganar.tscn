@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://cchkfsdp65jf0"]
+
+[ext_resource type="Script" path="res://ENEMIES/ganar.gd" id="1_77i0p"]
+[ext_resource type="Texture2D" uid="uid://cpd43haunhihn" path="res://BACKGROUND/IMG-20230822-WA0000.jpg" id="2_yqram"]
+
+[node name="GANAR" type="CanvasLayer"]
+script = ExtResource("1_77i0p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 1024.0
+texture = ExtResource("2_yqram")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 354.0
+offset_top = 227.0
+offset_right = 750.0
+offset_bottom = 313.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "HAS GANADO"
+
+[node name="SALIRSE" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 443.0
+offset_top = 367.0
+offset_right = -474.0
+offset_bottom = -195.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Salir
+(Ni modo)"
+
+[connection signal="pressed" from="SALIRSE" to="." method="_on_salirse_pressed"]

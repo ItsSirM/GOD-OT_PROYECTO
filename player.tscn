@@ -1,8 +1,10 @@
-[gd_scene load_steps=42 format=3 uid="uid://cpdaaualfeimx"]
+[gd_scene load_steps=44 format=3 uid="uid://cpdaaualfeimx"]
 
 [ext_resource type="Script" path="res://PLAYER.gd" id="1_2nbpp"]
 [ext_resource type="Texture2D" uid="uid://b2f418mr3yd2q" path="res://SPRITES/PlayerSS.png" id="2_v4q3q"]
 [ext_resource type="Script" path="res://NODES/Hurtbox.gd" id="3_wnvnd"]
+[ext_resource type="AudioStream" uid="uid://cl23ie7d1f76h" path="res://MUSICA/Y2meta.app - Bullet Impact _ Sound Effect (128 kbps).mp3" id="4_e3h55"]
+[ext_resource type="AudioStream" uid="uid://5cmoxbo0ulmq" path="res://MUSICA/y2mate.com -  Sonidos de Escopeta  Efecto de Sonido HD.mp3" id="5_cac6t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_400yg"]
 atlas = ExtResource("2_v4q3q")
@@ -351,3 +353,9 @@ script = ExtResource("3_wnvnd")
 position = Vector2(1, -4)
 shape = SubResource("CapsuleShape2D_ke6c4")
 debug_color = Color(0.772549, 0, 0.117647, 0.27451)
+
+[node name="PISTOLA" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_e3h55")
+
+[node name="ESCOPETA" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_cac6t")

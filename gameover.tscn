@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgbhebx82hh87"]
+
+[ext_resource type="Script" path="res://gameover.gd" id="1_dukco"]
+[ext_resource type="Texture2D" uid="uid://c4k4dfkhbk7uq" path="res://BACKGROUND/IMAGENDED.png" id="2_ng0f2"]
+[ext_resource type="AudioStream" uid="uid://coa1xqnwj0aye" path="res://MUSICA/y2mate.com - Cod zombies  evil laugh.mp3" id="2_qo5og"]
+
+[node name="gameover" type="CanvasLayer"]
+script = ExtResource("1_dukco")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1151.0
+offset_bottom = 661.0
+texture = ExtResource("2_ng0f2")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 398.0
+offset_top = 198.0
+offset_right = -378.0
+offset_bottom = -324.0
+theme_override_font_sizes/font_size = 60
+text = "GAME OVER
+"
+
+[node name="OTRAVE" type="Button" parent="."]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 481.0
+offset_top = 295.0
+offset_right = -466.0
+offset_bottom = -284.0
+theme_override_font_sizes/font_size = 30
+text = "REINTENTAR
+"
+
+[node name="SALIDA" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 480.0
+offset_top = 386.0
+offset_right = -469.0
+offset_bottom = -196.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "SALIR
+"
+
+[node name="nambe" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_qo5og")
+autoplay = true
+
+[connection signal="pressed" from="OTRAVE" to="." method="_on_otrave_pressed"]
+[connection signal="pressed" from="SALIDA" to="." method="_on_salida_pressed"]
