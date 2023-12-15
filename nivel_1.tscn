@@ -1,4 +1,4 @@
-[gd_scene load_steps=96 format=3 uid="uid://djtxlotr6up84"]
+[gd_scene load_steps=98 format=3 uid="uid://djtxlotr6up84"]
 
 [ext_resource type="Texture2D" uid="uid://k4buyti86t6e" path="res://BACKGROUND/FONDONEGRO.png" id="1_iovi2"]
 [ext_resource type="Texture2D" uid="uid://b15se6yanwjsl" path="res://BACKGROUND/Asset 1.png" id="1_l4f3h"]
@@ -28,7 +28,9 @@
 [ext_resource type="Texture2D" uid="uid://bdcgvtfpajuy8" path="res://BACKGROUND/mainlevbuild.png" id="16_056wh"]
 [ext_resource type="Texture2D" uid="uid://dsmc5j3l3p67q" path="res://BACKGROUND/mainlevbuild (1).png" id="17_bor4b"]
 [ext_resource type="Texture2D" uid="uid://bqio4p3qiy40u" path="res://BACKGROUND/mainlevbuild (2).png" id="18_ophff"]
+[ext_resource type="AudioStream" uid="uid://bf1k21li0ps32" path="res://MUSICA/y2mate.com - Cave 2  Ambience  Sound Effect.mp3" id="28_v47ta"]
 [ext_resource type="PackedScene" uid="uid://dw7yi7y8i2qyc" path="res://ENEMIES/HlvlCyberGuard.tscn" id="29_df7wk"]
+[ext_resource type="AudioStream" uid="uid://bgv5fkqrfpme7" path="res://MUSICA/a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3" id="29_qo4w6"]
 [ext_resource type="PackedScene" uid="uid://bq0i0dy6w7jot" path="res://ENEMIES/Hellhound.tscn" id="30_ws8sc"]
 [ext_resource type="PackedScene" uid="uid://b0ounxcvoxg7c" path="res://ENEMIES/CyberGuard.tscn" id="31_w7uev"]
 [ext_resource type="PackedScene" uid="uid://qpr1cpuq3hhg" path="res://ENEMIES/Deformer.tscn" id="32_6nacq"]
@@ -11762,7 +11764,37 @@ shape = SubResource("RectangleShape2D_rfipe")
 position = Vector2(-1671, 6112)
 shape = SubResource("RectangleShape2D_rfipe")
 
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(423, 3042)
+stream = ExtResource("28_v47ta")
+
+[node name="BOSSFIGHT" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-1844, 7464)
+stream = ExtResource("29_qo4w6")
+volume_db = -5.919
+
+[node name="AudioStreamPlayer2D4" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-3136, 2901)
+stream = ExtResource("28_v47ta")
+
+[node name="AudioStreamPlayer2D5" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(417, 4257)
+stream = ExtResource("28_v47ta")
+
+[node name="AudioStreamPlayer2D6" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-366, 5968)
+stream = ExtResource("28_v47ta")
+
+[node name="AudioStreamPlayer2D7" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1947, 5997)
+stream = ExtResource("28_v47ta")
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(2604, 2991)
+stream = ExtResource("28_v47ta")
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(3, 0)
 stream = ExtResource("14_adglr")
 volume_db = -1.235
 autoplay = true
@@ -11810,7 +11842,7 @@ position = Vector2(-3514, 2442)
 position = Vector2(-3994, 3339)
 
 [node name="Infected4" parent="." instance=ExtResource("6_hwfnt")]
-position = Vector2(591, 3092)
+position = Vector2(787, 3291)
 
 [node name="Infected5" parent="." instance=ExtResource("6_hwfnt")]
 position = Vector2(19, 2780)
