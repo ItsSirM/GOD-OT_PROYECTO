@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cchkfsdp65jf0"]
 
 [ext_resource type="Script" path="res://ENEMIES/ganar.gd" id="1_77i0p"]
-[ext_resource type="Texture2D" uid="uid://ot45iex4ey80" path="res://BACKGROUND/WhatsApp Image 2023-12-14 at 7.14.29 PM.jpeg" id="2_ypfcf"]
+[ext_resource type="Texture2D" uid="uid://b8tlns4yltr8e" path="res://BACKGROUND/doom.jpg" id="2_gvlb4"]
 
 [node name="GANAR" type="CanvasLayer"]
 script = ExtResource("1_77i0p")
@@ -10,7 +10,7 @@ script = ExtResource("1_77i0p")
 offset_left = -6.0
 offset_right = 1150.0
 offset_bottom = 652.0
-texture = ExtResource("2_ypfcf")
+texture = ExtResource("2_gvlb4")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="."]

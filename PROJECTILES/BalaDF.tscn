@@ -24,9 +24,6 @@ radius = 40.0125
 
 [node name="BalaDF" type="Node2D"]
 script = ExtResource("1_352ih")
-speed = null
-life = null
-damage = null
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

@@ -2,7 +2,7 @@ class_name Player
 extends CharacterBody2D
 
 @onready var anim = $AnimatedSprite2D
-var speed = 1200
+var speed = 800
 var health = 100
 var weapon = "PISTOL"
 var ammo = 50

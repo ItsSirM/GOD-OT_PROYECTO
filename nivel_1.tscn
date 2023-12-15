@@ -11726,7 +11726,7 @@ polygon = PackedVector2Array(551, 5051, 551, 5149, 600, 5149, 599, 5195, 640, 51
 polygon = PackedVector2Array(299, 5061, 300, 5200, 250, 5201, 251, 5251, 199, 5251, 200, 5297, 152, 5298, 149, 5349, 102, 5350, 99, 5403, 51, 5400, 50, 5451, -1, 5451, 0, 5549, -49, 5549, -50, 5595, -97, 5601, -100, 5647, -153, 5650, -152, 5697, -201, 5703, -199, 5751, -251, 5752, -250, 5799, -349, 5800, -349, 5851, -399, 5851)
 
 [node name="PAREDESINTER36" type="CollisionPolygon2D" parent="StaticBody2D"]
-polygon = PackedVector2Array(351, 5304, 349, 5452, 301, 5452, 301, 5551, 249, 5551, 249, 5599, 198, 5601, 199, 5648, 145, 5648, 151, 5704, 100, 5704, 100, 5755, -6, 5753, -7, 5807, -46, 5803, -46, 5855, -103, 5854, -100, 5903, -148, 5903, -150, 6046, 399, 5502, 400, 5352, 494, 5352, 497, 5497, 542, 5499, 999, 6047, 1044, 6047, 1049, 5951, 999, 5951, 996, 5905, 951, 5902, 948, 5851, 900, 5851, 902, 5798, 850, 5801, 851, 5747, 800, 5752, 802, 5699, 754, 5699, 752, 5650, 703, 5650, 704, 5601, 650, 5602, 650, 5500, 599, 5500, 599, 5452, 548, 5452, 551, 5301)
+polygon = PackedVector2Array(370, 5323, 349, 5452, 301, 5452, 301, 5551, 249, 5551, 249, 5599, 198, 5601, 199, 5648, 145, 5648, 151, 5704, 100, 5704, 100, 5755, -6, 5753, -7, 5807, -46, 5803, -46, 5855, -103, 5854, -100, 5903, -148, 5903, -150, 6046, 399, 5502, 400, 5352, 494, 5352, 497, 5497, 542, 5499, 999, 6047, 1044, 6047, 1049, 5951, 999, 5951, 996, 5905, 951, 5902, 948, 5851, 900, 5851, 902, 5798, 850, 5801, 851, 5747, 800, 5752, 802, 5699, 754, 5699, 752, 5650, 703, 5650, 704, 5601, 650, 5602, 650, 5500, 599, 5500, 599, 5452, 548, 5452, 551, 5301)
 
 [node name="PAREDESINTER37" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(1669.5, 6072)
@@ -11767,31 +11767,44 @@ shape = SubResource("RectangleShape2D_rfipe")
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(423, 3042)
 stream = ExtResource("28_v47ta")
+volume_db = 9.301
+autoplay = true
 
 [node name="BOSSFIGHT" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-1844, 7464)
 stream = ExtResource("29_qo4w6")
 volume_db = -5.919
+autoplay = true
 
 [node name="AudioStreamPlayer2D4" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-3136, 2901)
 stream = ExtResource("28_v47ta")
+volume_db = 4.228
+autoplay = true
 
 [node name="AudioStreamPlayer2D5" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(417, 4257)
 stream = ExtResource("28_v47ta")
+volume_db = 4.228
+autoplay = true
 
 [node name="AudioStreamPlayer2D6" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-366, 5968)
 stream = ExtResource("28_v47ta")
+volume_db = 3.382
+autoplay = true
 
 [node name="AudioStreamPlayer2D7" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(1947, 5997)
 stream = ExtResource("28_v47ta")
+volume_db = 5.074
+autoplay = true
 
 [node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(2604, 2991)
 stream = ExtResource("28_v47ta")
+volume_db = 5.073
+autoplay = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(3, 0)

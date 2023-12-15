@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://be1t4jjwtjmvm"]
+[gd_scene load_steps=4 format=3 uid="uid://be1t4jjwtjmvm"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_i01yb"]
-[ext_resource type="Texture2D" uid="uid://k4buyti86t6e" path="res://BACKGROUND/FONDONEGRO.png" id="2_u07v8"]
+[ext_resource type="Texture2D" uid="uid://b8tlns4yltr8e" path="res://BACKGROUND/doom.jpg" id="2_5pmwa"]
+[ext_resource type="AudioStream" uid="uid://bgv5fkqrfpme7" path="res://MUSICA/a.t.o.m - The Only Thing They Fear Is You (DOOM).mp3" id="3_cmlv1"]
 
 [node name="MENU" type="Control"]
 layout_mode = 3
@@ -17,7 +18,8 @@ script = ExtResource("1_i01yb")
 layout_mode = 0
 offset_right = 1158.0
 offset_bottom = 657.0
-texture = ExtResource("2_u07v8")
+texture = ExtResource("2_5pmwa")
+expand_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -57,6 +59,10 @@ text = "JUGAR
 layout_mode = 2
 theme_override_font_sizes/font_size = 60
 text = "SALIR"
+
+[node name="musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_cmlv1")
+autoplay = true
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer2/JUGAR" to="." method="_on_jugar_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer2/SALIR" to="." method="_on_salir_pressed"]
